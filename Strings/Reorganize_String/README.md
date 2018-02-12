@@ -1,21 +1,7 @@
-Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same.
-
-If possible, output any possible result.  If not possible, return the empty string.
-
-Example 1:
-
-Input: S = "aab"
-Output: "aba"
-Example 2:
-
-Input: S = "aaab"
-Output: ""
-Note:
-
-S will consist of lowercase letters and have length in range [1, 500].
+![alt text](https://raw.githubusercontent.com/edorado93/CoderChef-Kitchen/master/Images/Reorder_Strings.png)
 
 
-##SOLUTION
+## SOLUTION
 
 * The solution to this problem uses a heap based greedy approach. So the basic idea is that we count the frequencies of all the elements of the given string and then we create a max-heap for these characters along with their frequencies.
 * Now that we have the heap, we pop an element, add it to our resulting string, reduce it's frequency and we keep repeating until all the characters in the original string have been accounted for. 
