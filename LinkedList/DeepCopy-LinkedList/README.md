@@ -1,15 +1,16 @@
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/LinkedList-Random-Pointer.png)
 
-[IMAGE HERE for LinkedList depiction]
+Before looking at the solution, have a look at how the linked list looks, just to get a better understanding of the question.
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/LinkedList-RandomPointers.png)
 
 ## RECURSIVE SOLUTION
 
-[IMAGE HERE for modelling as a tree]
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/LinkedList-RandomPointers-Tree.png)
 
 * The basic idea behind the recursive solution is to consider the linked list like a binary tree. 
 * Every node of the Linked List has 2 pointers. So we consider these nodes as belonging to a binary tree. 
 * The head of the list becomes the root of the tree.
-* So what we basically have to do now is to traverse the binary tree and clone it. The main issue that we need to tackle here is that of loops. So we can have [IMAGE HERE for shoing loops]. We need to handle this in the code. 
+* So what we basically have to do now is to traverse the binary tree and clone it. The main issue that we need to tackle here is that of loops. So we can have ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/LinkedList-RandomPointers-Loop.png). We need to handle this in the code. 
 * We start from the root node and we keep traversing the tree (list) and we keep generating new nodes whenever we find a node for which the clone has not been generated. For e.g. we were at the node A and we used the next pointer to go to node B and we created B' which is a new node B with the same data. Also, say there was a random pointer from A to B. In this case we don't have to create yet another copy of the node B because B' already exists. We need to take care of this as well. 
 * Time complexity: O(n) where n is the number of nodes in the list. Space complexity: O(n). If we look closely, we have the recursion stack, then we have the space complexity to keep track of nodes already cloned. But asymptotically, the complexity is O(n)
 
