@@ -28,7 +28,7 @@ class Solution:
         while heaplist:
             i = 0
 
-            """ Pop until the heap finishes or until n elements have been popped. n being the interval """
+            """ Pop until the heap finishes or until n+1 elements have been popped. n being the interval """
             while i <= n:
                 if heaplist:
                     """ 
