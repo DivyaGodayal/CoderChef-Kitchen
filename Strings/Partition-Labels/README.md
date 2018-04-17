@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/edorado93/CoderChef-Kitchen/master/Images/Partition-Labels.png)
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Partition-Labels.png)
 
 ## SOLUTION
 
