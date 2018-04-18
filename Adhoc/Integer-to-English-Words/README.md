@@ -3,7 +3,7 @@
 ## SOLUTION
 
 * The question isn't hard to understand in itself. So will proceed straight to explaining the implementation details. 
-* We will attempt to solve this problem recursively. Before proceedint to solve it recursively, however, let us look closely at the given pattern in the question.
+* We will attempt to solve this problem recursively. Before proceeding to solve it recursively, however, let us look closely at the given pattern in the question.
 * Two digit numbers can be solved separately and easily. 
 * For the three digit numbers, we can split them up into 1 + 2 and then recursively solve them individually and then string them up like this `recurse(num[1]) + " Hundred " + recurse(num[2:3])`
 * Similar strategy can be used for bigger buckets like Thousand, Million and finally Billion. We stop at Billion because the max number can be 2^31-1 and that is approximately 2 Billion. So that is where we stop. 
