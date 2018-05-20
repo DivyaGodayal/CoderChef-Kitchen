@@ -1,4 +1,3 @@
-## Change The Signs
 
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Change-the-signs.png)
 
