@@ -22,7 +22,7 @@ class Solution(object):
             if (rem, buf) in memo:
                 return memo[(rem, buf)]
             
-            # Since we are to minimuse the answer, so taking a max value as the initial value
+            # Since we are to minimize the answer, so taking a max value as the initial value
             ans = float("inf")
             
             # Copy all and Paste operation. We had (n - rem) printed on screen. After copy paste it would be 2*(n - rem) and 

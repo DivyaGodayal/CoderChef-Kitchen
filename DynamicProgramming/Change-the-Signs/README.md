@@ -131,5 +131,55 @@ def retrace(was_first_number_negated):
 				print numbers[i + 1] # We know for sure this would be positive if ith index was negated.
 
 ```
+## Better Approach
+This problem could even be solved by 1 Dimensional DP.
+Instead of checking for the capacity check on the left side, we can look foward. 
+Which simply means if you are at an index, you check if that element along with the element at index+2 have the capacity to swallow the element at index+1. If there is a possibility of swallow then we directly jump to index+3, if we negate element at index because element at index+1 and index+2 both can't be negative.
 
+---
+```
+SWALLOW POSSIBLE 
+4,[1],2,1,3,1,2
+```
+**Left, Right and Swallow check satisfied at index = 1**
+If we negate the element at index = 1 i.e.[1], we can't negate
+elements at 
+```
+index = 2 
+4,-1,-2,1,3,1,2 \\INVALID
+```
+```
+index = 3 
+4,-1,2,-1,3,1,2 \\INVALID \\LEADS TO SWALLOW OF INDEX = 2
+```
+Hence we jump to index = 4
 
+---
+```
+SWALLOW NOT POSSIBLE 
+4,[1],3,1,3,1,2 
+```
+If the swallow is not possible then we jump to index = 3.
+
+```
+index = 3 
+4,-1,2,[1],3,1,2 //Still valid
+```
+---
+
+Below is a small snippet from the code for the above condition. Please check the solution provided to understand things better. 
+
+```
+ if right_check and left_check > 0:
+        if swallow_check:
+            neg = recursive_signs(index+3) - A[index] + A[index + 1] + A[index + 2]
+        else:
+            neg = recursive_signs(index+2) - A[index] + A[index + 1]
+
+```
+
+Bactracking has a similar change, we look forward instead.
+
+Since at any point we are looking forward and jump to the index only if its a possible canditate for negatition in that particular recursion we save ourselves from keeping an extra recursion variable - ```was_prev_negated```
+
+Hence just one recursion variable i.e. the current index.
