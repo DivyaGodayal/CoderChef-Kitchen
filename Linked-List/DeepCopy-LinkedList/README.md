@@ -23,4 +23,10 @@ Before looking at the solution, have a look at how the linked list looks, just t
 * In the second pass we clone the random pointer. The way we do it is like this. The random pointer for A' (A' is the cloned version of the node A) is dictionary value of the node pointed to by the random pointer of A. In case this is unclear, look at the code. 
 * **Time complexity: O(n)** because we make 2 passes over the original list. **Space complexity: O(n)** as we have a dictionary containing mapping from old list nodes to new list nodes. Since there are **n** nodes, we have O(n) space complexity.
 
+## SINGLE PASS ITERATIVE SOLUTION
 
+* We can also solve this problem in a single pass. 
+* When we are iterating over the list, we make a new node using the `next` pointer essentially, right? We cannot assign the random pointers in the first pass because the random pointer may point to say the last node and we don't have a clone for that node yet. So we simply assigned the next pointers in the first pass and in the second pass we assigned the random pointer. 
+* However, we can create new nodes via the random pointer or the next pointer whichever points to a node that doesn't exist in our old --> new dictionary. Say, if the random pointer of the first node points to the last node, we will create a new node corresponding to the last node and add it to the dictionary. Then, when we will be at the second last node during our iteration, we will check the dictionary to see if a clone already exists for the last node. Since a clone exists, we will simply assing the `next` pointer of the secon last node and move on. Take a look at the diagram below 
+
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/CopyLinkedList-SinglePass.png)
