@@ -1,3 +1,4 @@
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Hand-of-Straights.png)
 
 ## SOLUTION
 
