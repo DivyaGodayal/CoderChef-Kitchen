@@ -47,8 +47,8 @@ if cell[i][j] == 0 {
 }
 ```
 
-* Since, the first entry of row and column for the first row and first column is the same i.e. `cell[0][0]`, we use an additional variable to tell us if the first column had been marked or not and the `cell[0][0]` would b for the first row then.
-* So, we go over our matrix and we mark the first entry of a row and first entry of c column if the condition in the pseudo code above is satisfied.
+* Since, the first entry of row and column for the first row and first column is the same i.e. `cell[0][0]`, we use an additional variable to tell us if the first column had been marked or not and the `cell[0][0]` would be used to tell the same for the first row.
+* So, we go over our matrix and we mark the first entry of a row and first entry of a column if the condition in the pseudo code above is satisfied.
 * After we have done this, we first use the entries in the first column to set each of the row(s) to zero.
 * Then, we use the first row to zero out the column(s).
 * We then check if `cell[0][0] == 0`, if this is the case, we mark the first row as zero.
