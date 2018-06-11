@@ -3,7 +3,7 @@
 ## SOLUTION
 
 * The question asks us to split the original string into a sequence of numbers that form a fibonacci sequence with certain conditions being satisfied.
-* The major condition that really helps reduce the solution complexity if that any number in the fibonacci sequence that we consider should not be greater than 2^31 - 1. That means we only have to consider substrings of length <= 11 for elements of our potential fibonacci sequence.
+* The major condition that really helps reduce the solution complexity is that any number in the fibonacci sequence that we consider should not be greater than 2^31 - 1. That means we only have to consider substrings of length <= 11 for elements of our potential fibonacci sequence.
 * Now, from the looks of it, this might seem like a classical dynamic programming based question because essentially we need to see at what all points we can cut the original sequence eg:
 
 ```
