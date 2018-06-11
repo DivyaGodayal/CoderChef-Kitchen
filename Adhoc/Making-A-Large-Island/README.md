@@ -38,7 +38,7 @@ function dfs_util()
 ```
 
 * Note, in the above function, the call to `dfs` is just the normal depth first search traversal that we perform on a given graph and the pseudo-code for the same is left out in this article.
-* Now, this was pretty easy. Wasn't it ? Let's move onto the actual problem at hand. We will solve this problem where we are allowed switches as well as en extension of this simple graph problem.
+* Now, this was pretty easy. Wasn't it ? Let's move onto the actual problem at hand. We will solve this problem where we are allowed switches as well as an extension of this simple graph problem.
 * Have a look at the pseudo-code
 
 ```
@@ -77,7 +77,7 @@ function dfs_util()
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Large-Island-Logic.png)
 
 * Now, the main idea is that we we iterate over our matrix and consider all of the '0's for flipping. One at a time.
-* When we are considering a 0 at a certain cell `(i, j)`. we want to see if flipping this cell would lead to combining some other components or not. If we can combine components because of this, we do that and see the size of new islands we can form this way.
+* When we are considering a 0 at a certain cell `(i, j)`. We want to see if flipping this cell would lead to combining some other components or not. If we can combine components because of this, we do that and see the size of new islands we can form this way.
 * In this way, we can see the effect of flipping a single 0 in O(1) time and all the time complexity went into the connected components algorithm we discussed before which is pretty standard.
 * **Time Complexity** O(V + E) = O(M * N) where the matrix has M rows and N columns.
 * **Space Complexity** O(M * N) because we are storing the connected component number for every element in the matrix. 
