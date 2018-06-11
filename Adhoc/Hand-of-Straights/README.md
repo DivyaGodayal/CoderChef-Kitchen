@@ -16,5 +16,5 @@
 
 * If we are able to create groups for all the unique hands we return True.
 
-** Time Complexity ** = O(nlogn)
-** Space Complexity ** = O(n)
+**Time Complexity** = O(nlogn)
+**Space Complexity** = O(n)
