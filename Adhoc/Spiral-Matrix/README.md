@@ -68,3 +68,5 @@ In a similar fashion we now print out the last column starting from `i=1 and j=e
 We keep printing in this fashion, first the last row and then the first column from bottom to top. When we reach the first element i.e. `i = s_r and j = s_c` that means we have printed out the perimeter and now we can recurse on the remaining matrix i.e. `(s_r + 1, s_c + 1, e_r - 1, e_c - 1)`.
 
 Have a look at the code for some edge cases and better clarity.
+
+https://gist.github.com/edorado93/f89850fc7353c7662fac133ebd49c793
