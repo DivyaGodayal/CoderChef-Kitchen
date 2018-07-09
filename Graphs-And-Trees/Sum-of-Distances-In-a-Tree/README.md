@@ -1,7 +1,6 @@
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Sum-of-Distances-Tree.png)
 
 ## SOLUTION
-
-![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Sum-of-Distances-Tree.png)
 
 Let's look at what the question is asking us to do here. Consider the following tree.
 

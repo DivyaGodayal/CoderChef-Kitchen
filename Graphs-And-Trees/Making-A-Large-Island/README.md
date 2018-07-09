@@ -1,6 +1,6 @@
-## SOLUTION
-
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Making-A-Large-Island.png)
+
+## SOLUTION
 
 * So, the question essentially asks us to find the size of the largest island given and we are allowed to
 flip at most one of the zeros given in the matrix.

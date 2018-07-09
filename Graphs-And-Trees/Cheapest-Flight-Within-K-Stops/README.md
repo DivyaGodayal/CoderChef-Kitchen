@@ -1,8 +1,6 @@
-## SOLUTION
-
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Cheapest-Flight.png)
 
-### Dynamic Programming Solution
+## Dynamic Programming Solution
 
 * There is a very simple dynamic programming based solution to this problem.
 * Have a look at the following diagram and then I will explain the recursive relation for the problem.
@@ -22,7 +20,7 @@ dp[k][D] = min(dp[k-1][x] + cost[x --> D]) for all x which have an edge to D.
 **Time Complexity** = O(n * K)
 **Space Complexity** = O(n * K)
 
-### BFS Solution
+## BFS Solution
 * This solution is the most natural solution that comes to one's mind when thinking of these kind of problems. You may have come up with Dijkstra's Algorithm and a modification to it, but I tried doing that and didn't work out for me. DP was the way to go initially.
 * But, as it turns out, there is a faster alternative to this problem.
 * We can use BFS to keep track of the recursion states i.e. the nodes and use them to find the shortest path.

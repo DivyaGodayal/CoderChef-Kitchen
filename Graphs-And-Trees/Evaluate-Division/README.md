@@ -1,6 +1,6 @@
-## SOLUTION
-
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Evaluate-Division.png)
+
+## SOLUTION
 
 There are certain base cases that can easily be handled right off the shelf either directly or by using some additional data structures.
 

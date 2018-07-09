@@ -1,6 +1,6 @@
-## SOLUTION
-
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/2-Keys.png)
+
+## SOLUTION
 
 So according to the question we have to print a certain number of 'A's on the screen and we have just two operations with equal cost at our disposal.At any point you can either copy or paste. We can solve this question recursively. The reason for that is that once we have printed say X number of 'A's on the screen optimally, we need to decide the optimal set of steps for the remaining number of 'A's i.e. (N - X) and that in itself is a subproblem of what we wanted to solve initially. Hence the recursion.
 

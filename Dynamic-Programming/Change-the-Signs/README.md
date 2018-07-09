@@ -31,7 +31,7 @@ As you can clearly see, we only have 2 valid subsequences that can be obtained  
 
 Now the 2 valid set of numbers are `4 3 1 2` and `4 3 -1 2`. We need to return the set that has the **MINIMUM OVERALL SUM** which would be `4 3 -1 2` in this case. 
 
-## Dynamic Programming 
+## Dynamic Programming Solution 
 
 This problem can be solved by dynamic programming and is divided into two basic parts. 
 * One is the main dynamic programming recursion that we use to find out the **minimum sum of the final set**. Note, the dynamic programming is not directly used to obtain the final set, just the final sum of the set. So our dynamic programming approach would correctly find out the sum for the example given above as 8. `4 + 3 + (-1) + 2 = 8`. 
