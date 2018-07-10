@@ -19,3 +19,5 @@ We shy away from the notion of Coffee to Code. That's too mainstream. We're more
 Jokes apart, you will find solutions with well defined explanations to a lot of interesting programming questions. Mostly, the questions would be from leetcode.com, but feel free to contribute as much as possible. 
 
 Hope you like the dishes ;)
+
+\\( O(n^2) \\)
