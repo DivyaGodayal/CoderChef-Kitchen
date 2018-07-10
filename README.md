@@ -20,4 +20,3 @@ Jokes apart, you will find solutions with well defined explanations to a lot of 
 
 Hope you like the dishes ;)
 
-\\( O(n^2) \\)
