@@ -18,10 +18,10 @@ class Solution(object):
         
         ans = 0
         
-        # To try all combinations from 1 to N-3
+        # To try all combinations from N-3 down to 1
         # Breaking into sub-problems
         # F(N) = MAX(F(j) * (N - j -1)) where N-3 <= j <= 1 
-        for i in range(N-2):
+        for i in range(N-3, 0, -1):
             ans = max(ans, self.maxA(i) * (N-i-1))
         self.memo[N] = ans
         return ans
