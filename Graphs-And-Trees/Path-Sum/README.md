@@ -24,7 +24,7 @@ tree is `log(N)` and this is exactly the number of ancestral nodes it will have.
 * So, we have `N` nodes and each of them gets processed `log(N)` number of times giving us 
 the complexity of `O(Nlog(N))` 
 
-https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag1.png
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag1.png)
 
 **Worst Case:**
 
