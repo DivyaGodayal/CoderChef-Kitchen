@@ -24,8 +24,7 @@ tree is `log(N)` and this is exactly the number of ancestral nodes it will have.
 * So, we have `N` nodes and each of them gets processed `log(N)` number of times giving us 
 the complexity of `O(Nlog(N))` 
 
-
-[[Diagram]]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag1.png
 
 **Worst Case:**
 
@@ -39,16 +38,16 @@ Worst time complexity
 = 1 + 2 + 3 + .......+ N-1
 = O(N^2)
 ```
-[[Diagram]]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag2.png
 
 ### Optimal Solution
 * In the optimal solution we traverse the tree one node at a time in regular depth first fashion. Keeping a track of the sum down any path till that node and calling it the `running_sum`.
 
-[[Diagram]]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag3.png
 
 Storing these running sum in a dictionary helps to keep a track of what all milestones we have reached so far. Since this is a cummulative sum we can at any time find the difference between any milestone to find the distance for any sub-path.
 
-[[Diagram]]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag4.png
 
 * Here, since we have the target sum i.e. the desired sum for a path we can find out the difference between target_sum and the running_sum for a node and call it the `deviation`. 
     ```
@@ -57,15 +56,13 @@ Storing these running sum in a dictionary helps to keep a track of what all mile
 
 The deviation tells us how far is our running sum from the target_sum.
 
-[[Diagram to show the negative and positive deviations.]]
-
 * Now if we have this present in the dictionary of running_sums then we can say we do have a path in the dictionary which is causing this deviation and could be removed to get a sub-path with desired sum.
 
-[[Diagram to show the subpath and remove of deviation path]]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag5.png
 
 * Since there could be nodes with negative values hence there could be paths with same running_sum. Thus we need to save the count of same running_sums. Since either of these running sums could lead us to a sub-path with desired sum. 
 
-[Diagram to show multiple paths on the same path.]
+https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Path-Sum-Diag6.png
 
 
 **Time Complexity:** Number of nodes in the tree = N.
