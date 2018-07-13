@@ -50,8 +50,7 @@ by `S` and is of length `l`.
 
 * This means that the last password that the safe would have considered was `S[l-n:]` i.e. the last `n` characters.
 Now, we can enter one more digit from the range of possible digits that we have i.e. `0 .. k`. After entering this 
-digit, the new password that would be considered by the safe would be `S[(l+1) - k:]` since the new length of the sequence would be 
-`l+1`. 
+digit, the new password that would be considered by the safe would be `S[(l+1) - n:]` since the new length of the sequence would be `l+1`. 
 
 * Now consider the example we discussed above and let us look at the following sequence `001`. 
 We can consider a `1` here as the new character and that would give us `0011` with `11` being the new
