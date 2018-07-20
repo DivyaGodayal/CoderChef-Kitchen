@@ -4,7 +4,7 @@
 
 Hey there!
 
-```
+```python
 def drink_to_code(drink):
     if drink == "green tea":
         generate_code()
