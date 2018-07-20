@@ -1,6 +1,6 @@
 # CoderChef-Kitchen
 
-![alt text](https://pbs.twimg.com/media/DT2DZoYX4AEwzTV.jpg)
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/coffee-to-code.png)
 
 Hey there!
 
