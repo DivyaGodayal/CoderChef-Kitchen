@@ -10,7 +10,7 @@ def drink_to_code(drink):
         generate_code()
 ```
 
-The Coderchef Kitchen welcomes you. We're a couple of programmers who love programming and we're all about fun with Data Structures and Algorithms. 
+The Coderchef Kitchen welcomes you. We love programming and we're all about fun with Data Structures and Algorithms. 
 
 We shy away from the notion of Coffee to Code. That's too mainstream. We're more of GreenTea to Code!
 
