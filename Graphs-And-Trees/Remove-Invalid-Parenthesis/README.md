@@ -7,7 +7,7 @@ to make the resulting expression a valid one.
 
 ## A Recursive Naïve Solution
 
-* There is a very simple recursive approach to tis problem. 
+* There is a very simple recursive approach to this problem. 
 * The question asks us to remove some (maybe even 0) parenthesis to make the resulting 
 expression valid. 
 * Since we don't really know which of the parenthesis should be removed, we can 
@@ -67,7 +67,7 @@ right parenthesis as there are invalid left and right ones.
 * For e.g. we found out that there are 3 misplaced left and 3 misplaced 
 right parenthesis in the entire string and the overall string contains 500 
 left and 500 right parenthesis, then we won't end up removing more than 
-3 left or right parenthesis and this would being down the number of possibilities 
+3 left or right parenthesis and this would bring down the number of possibilities 
 we try drastically thus reducing the overall time.      
 
 * Let us look at the pseudo-code for finding out the number of misplaced left and 
