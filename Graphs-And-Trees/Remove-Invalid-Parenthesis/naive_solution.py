@@ -21,7 +21,7 @@ class Solution(object):
                 # list in the recursion and eventually join to get the final string. 
                 possible_ans = "".join(ans)
                 
-                # If the number of ignored paranthesis in this recursion are equal to the current minimum, record
+                # If the number of ignored parenthesis in this recursion are equal to the current minimum, record
                 # the current expression by adding it to our set. 
                 # Since it's a set, duplicates would be handled accordingly
                 if ignored == min_ignored:

@@ -1,15 +1,15 @@
-![alt text](https://raw.githubusercontent.com/edorado93/CoderChef-Kitchen/master/Images/Isomorphic-Strings.png)
+![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Isomorphic-Strings.png)
 
 
 ## SOLUTION
 
 * The important thing to notice in this question is that isomorphic strings would always follow a pattern. This is how you will  replace characters in one string to get the other one. 
 
-![alt text](https://raw.githubusercontent.com/edorado93/CoderChef-Kitchen/master/Images/Isomorphic_Strings_1.jpg)
+<img src="https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Isomorphic_Strings_1.jpg" height="500" width="500">
 
 * In the above example `PAPER` and `TITLE` are isomorphic strings. Both of which follow a pattern which leads to the mappings given in the diagram above. This means P can be replaced by T, A by I, E by L and R by E, to get string `TITLE` from `PAPER`.
  
-![alt text](https://raw.githubusercontent.com/edorado93/CoderChef-Kitchen/master/Images/Isomorphic_Strings_2.jpg)
+<img src="https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Isomorphic_Strings_2.jpg" height="500" width="500">
 
 * In the example above the two strings are not isomorphic. The pattern generated from both the strings is different. This means if O maps to A, then O maps to R would be conflicting. This happens because there are conflicting mappings. O maps to A and O maps to R. That's not allowed in isomorphism.
 
