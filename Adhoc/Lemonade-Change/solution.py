@@ -17,7 +17,6 @@ class Solution:
             # If the customer gave $5 then just increase the count of $5 notes by 1.
             if bill == 5:
                 count_fives += 1
-                continue
             elif bill == 10:
                 if count_fives > 0:
                     # If you have $5 notes to return, just decrease $5 count by 1 and increase $10 by 1.
