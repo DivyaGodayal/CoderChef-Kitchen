@@ -1,7 +1,5 @@
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Word-Search.png)
 
-## Yes, you are right! Its as simple at that.
-
 * Here are the steps:
 1. Start from a cell.
 2. Go in all directions one by one.
@@ -10,6 +8,7 @@
 5. If you do, return True.
 6. If not then keep repeating the same steps for each cell.
 
+### Yes, you are right! Its as simple at that.
 
 ![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Word-Search-1.png)
 
@@ -22,5 +21,5 @@ d) `Right` - Right cell is the way to go since it has the letter 'R'.
 
 We follow the same steps as mentioned above from the Right cell and eventually will find the word 'SEARCH'. 
 
-* **Time Complexity** `O(N^2)` for every cell you might go down a path of N cells. 
-* **Time Complexity** Recursive stack space depending on the depth of the recursive call.
+* **Time Complexity** `O(M * N * len(word))` because our grid is a size of `M * N` and for every cell we might end up doing a recursion spanning all but one letter of our original word. e.g.:- Our grid consists of just the character `A` and our actual word is something like `AAAAAAAAAAAAAAB`. We will have recursions (DFS) matching all these letters but not the last one. 
+* **Space Complexity** `O(len(word))`
