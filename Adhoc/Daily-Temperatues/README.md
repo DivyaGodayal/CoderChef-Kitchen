@@ -2,8 +2,8 @@
 
 ## Solution
 
-* We are given a list of temperatures over multiple days , we are to 
-find, for every individual day, after how long will a warmer day arrive. 
+* We are given a list of temperatures over multiple days, we are to 
+find, for every individual day, after how many days will a warmer day arrive. 
 
 * If you think about these temperatures as just numbers, then what we have to 
 do here is: Given a list of numbers, for every number find out the index of the next
@@ -13,7 +13,7 @@ higher element in the list. That's all we have to do to solve this question.
 report the distance of that index from the current index. 
 
 * This classic problem can be solved by two different data structures
-    1.  Heap
+    1. Heap
     2. Stack
     
 ### Heap based Solution
@@ -32,28 +32,28 @@ next largest element properly, we add the current element to the heap and we
 move forward. 
 
 * **Time Complexity**: `O(nlogn)` we eventually push and pop every element from the heap.
-* **Space Complexity**: `O(n)` for the heap      
+* **Space Complexity**: `O(n)` for the heap.      
 
-## Stack based solution
+### Stack based solution
 
-* It turns out that we can do better on this task complexity wise by using the 
+* It turns out that we can do better on this task, complexity wise by using the 
 stack data structure. 
 
 * We iterate on the array in reverse. 
 
 * For every element we do these steps:
     1. Pop all the elements from the stack that are smaller than this element 
-    or until the stack doesn't become empty. 
+    or until the stack becomes empty. 
     2. If we found an element that was larger than this element, then that
     element on the stack would be the next larger element corresponding to the
     current element. 
     3. If the stack became empty, then this current element is the largest one
     till now. 
     4. Add the current element to the stack and repeat the process.
-    **Note:** we are moving in the reverse direction on the array for this to work.
+    **Note:** We are moving in the reverse direction on the array for this to work.
     
 * **Time Complexity:** `O(n)`
-* **Space Complexity:** `O(n)`    
+* **Space Complexity:** `O(n)`  
 
 ### Dry Run
 
@@ -79,12 +79,12 @@ till the next warmer day.
  
  * i = 2, element = 72, stack = [3]
     --> element < temperatures[stack[top]]
-    --> next_largest[2] = stack[top] - 2 = (3 - 2) = 1
+    --> next_largest[2] = stack[top] - i = (3 - 2) = 1
     --> add 2 to the stack
     
  * i = 1, element = 69, stack = [2, 3]
     --> element < temperatures[stack[top]]
-    --> next_largest[4] = stack[top] - 1 = (2 - 1) = 1
+    --> next_largest[4] = stack[top] - i = (2 - 1) = 1
     --> add 1 to the stack
     
  * i = 0, element = 75, stack = [1, 2, 3]
@@ -92,7 +92,7 @@ till the next warmer day.
     --> element > temperatures[stack[top]], therefore stack.pop()
     --> element > temperatures[stack[top]], therefore stack.pop()
     --> element < temperatures[stack[top]]
-    --> next_largest[0] = stack[top] - 0 = (3 - 0) = 3
+    --> next_largest[0] = stack[top] - i = (3 - 0) = 3
     --> add 0 to the stack
 ```
 
