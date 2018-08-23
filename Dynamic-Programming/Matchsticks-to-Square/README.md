@@ -19,7 +19,7 @@
 
 ## Recursive Solution
 
-* It is possible that a matchstick ***can*** be a part of multiple sides of the resulting square, but which one of these choices leads to the formation of an actual square is something we don't know. So, we try out everything.
+* It is possible that a matchstick ***can*** be a part of any side of the resulting square, but which one of these choices leads to the formation of an actual square is something we don't know. So, we try out everything.
 
 * This means that for every matchstick in our given list / array, we essentially have 4 different options (each representing the side of the square or subset that this element can be a part of). We try out all of them and keep on doing this in a recursive fashion until we exhaust all of the possibilities or until we find an arrangement of our matchsticks such that they form the 4 sides of a square.
 
