@@ -22,7 +22,7 @@ left                                right (some condition met)
 
 * The answer is the smallest desirable window.
 
-For eg. ` S = "ABAACBAB" T = "ABC" Then our answer window is "ACB"`
+For eg. ` S = "ABAACBAB" T = "ABC" Then our answer window is "ACB" but shown below is one of the possible desirable windows.`
 <center>
 <img src="../../Images/Minimum-Window-Substring-1.png" width="500"/>
 </center>
@@ -42,7 +42,7 @@ For eg. ` S = "ABAACBAB" T = "ABC" Then our answer window is "ACB"`
 </center>
 
 * **Time Complexity:** `O(2*|S| + |T|)`
-In the worst case we might end up visiting every element of string `S` twice, once by left pointer and once by right pointer. |T| to get the T counter.
+In the worst case we might end up visiting every element of string `S` twice, once by left pointer and once by right pointer. |T| represents the length of string `T`.
 
 * **Space Complexity:** `O(|S| + |T|)`
 |S| when the window size is equal to the entire string `S`. |T| when `T` has all unique characters.
