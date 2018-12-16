@@ -45,53 +45,49 @@ Also, if we simply run the binary search algorithm over the given array while se
 Let’s look at the pseudo code for this algorithm first and then go through an example.
 
 ```
+function can_preprocess(arr, X) {
+    low = 0
+    high= 0
 
-	function can_preprocess(arr, X) {
-	     low = 0
-	     high= 0
+    while X is not found {
+        mid = (low + high) / 2
+        if arr[mid] == X {
+            break           
+        }
 
-			while X is not found {
-          mid = (low + high) / 2
-          if arr[mid] == X {
-             break           
-      		}
+        correctly_placed_low = 0
+        correctly_placed_high = 0
+        count_low_needed = 0
+        count_high_needed = 0
 
-					correctly_placed_low = 0
-          correctly_placed_high = 0
-          count_low_needed = 0
-          count_high_needed = 0
+        if `mid` suggests we should go right for X {
+            if X is actually on the right {
+                correctly_placed_low ++
+            } else {
+                count_low_needed ++
+            }
+        } else {
+            if X is actually on the left {
+                correctly_placed_high ++
+            } else {
+                count_high_needed ++
+            }
+        }
 
-			if `mid` suggests we should go right for X {
-           if X is actually on the right {
-               correctly_placed_low ++
-           } else {
-               count_low_needed ++
-           }
-      } else {
-           if X is actually on the left {
-              correctly_placed_high ++
-           } else {
-              count_high_needed ++
-           }
-      }
+        modify low and high according to where `X` actually is with respect to `mid`
+    }
 
-			modify low and high according to where `X` actually is with respect to `mid`
-
-		}
-
-			// Total smaller numbers available for swapping
-	     TSM = sorted_index[X] - correctly_placed_low
-
-			// Total Larger numbers available for swapping
-	     TLM = (N - sorted_index[X]) - correctly_placed_high
-
-			if count_low_needed > TSM or count_high_needed > TLM {
-	          return -1
-   		}
-
-	return max(count_low_needed, count_high_needed)
+    // Total smaller numbers available for swapping
+    TSM = sorted_index[X] - correctly_placed_low
+    
+    // Total Larger numbers available for swapping
+    TLM = (N - sorted_index[X]) - correctly_placed_high
+    
+    if count_low_needed > TSM or count_high_needed > TLM {
+        return -1
+    }
+    return max(count_low_needed, count_high_needed)
 }
-
 ```
 
 **Note:** The problem statement fixes the input array for us and repeatedly passes values to be searched in the input array. So, we can iterate once over the original array to know the actual location of the element to be searched (create a dictionary, essentially).
