@@ -1,6 +1,3 @@
-## Solution
----
-
 Add basic intuition section here. In case you want to describe the problem in more detail, add some basic figures describing the problem. For e.g. you might want to add a figure describing the graph representation for the problem.
 
 For adding images, use the following:
@@ -12,7 +9,7 @@ For adding images, use the following:
 ```
 
 ---
-#### Solution 1: <Approach Name>
+### Solution 1: <Approach Name>
 
 ##### Motivation
 
