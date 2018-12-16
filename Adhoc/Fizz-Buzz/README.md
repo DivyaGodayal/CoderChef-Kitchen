@@ -1,14 +1,15 @@
-![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Fizz-Buzz-Question.png)
-
-## Solution
+<p align="center">
+<img src="../../Images/Fizz-Buzz-Question.png" width="600">
+</p>
 
 You must have played FizzBuzz as kids. FizzBuzz charm never gets old. And so here we are looking at how you can take on one step at a time and impress your interviewer with a better and neat approach to solve this problem.
 
+---
 #### Approach 1: Naive Approach
 
 **Intuition**
 
-The moment you hear of FizzBuzz you think whether the number is divisible by `3`, `5` or both.
+The first approach is based on a simply divisibility check by `3`, `5` or both.
 
 **Algorithm**
 
@@ -22,12 +23,10 @@ The moment you hear of FizzBuzz you think whether the number is divisible by `3`
 
 **Complexity Analysis**
 
-* Time Complexity: $$O(N)$$
-* Space Complexity: $$O(1)$$
-<br/>
+* **Time Complexity**: `O(N)`
+* **Space Complexity**: `O(1)`
 
 ---
-
 #### Approach 2: String Concatenation
 
 **Intuition**
@@ -69,12 +68,10 @@ Similarly, for `FizzBuzzJazz` now we would just have three conditions to check f
 
 **Complexity Analysis**
 
-* Time Complexity: $$O(N)$$
-* Space Complexity: $$O(1)$$
-<br/>
+* **Time Complexity**: `O(N)`
+* **Space Complexity**: `O(1)`
 
 ---
-
 #### Approach 3: Hash it!
 
 **Intuition**
@@ -101,9 +98,8 @@ So, for `FizzBuzzJazz` the hash table would look something like ``{ 3: 'Fizz', 5
 
 **Complexity Analysis**
 
-* Time Complexity : $$O(N)$$
-* Space Complexity : $$O(1)$$
-<br /><br/>
+* Time Complexity : `O(N)`
+* Space Complexity : `O(1)`
 
 ---
 Originally published in [@LeetCode](https://leetcode.com/articles/fizz-buzz/).
