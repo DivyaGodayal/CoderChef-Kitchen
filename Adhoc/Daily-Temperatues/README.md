@@ -1,7 +1,7 @@
 
-<center>
-<img src="../../Images/daily-temp.png" width="400">
-</center>
+<p align="center">
+<img src="../../Images/daily-temp.png" width="600">
+</p>
 
 * We are given a list of temperatures over multiple days, we are to find, for every individual day, after how many days will a warmer day arrive.
 
@@ -29,6 +29,7 @@ have been the next larger element for some of these elements in the heap, then t
 * **Time Complexity**: `O(NlogN)` since we eventually push and pop every element from the heap and considering we have `N` elements in the heap.
 * **Space Complexity**: `O(N)` as occupied by the heap.      
 
+---
 ### Solution 2: Using Stack
 
 It turns out that we can do better on this task, complexity wise by using the stack data structure.
