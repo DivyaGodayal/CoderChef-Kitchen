@@ -1,94 +1,81 @@
-![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/daily-temp.png)
 
-## Solution
+<center>
+<img src="../../Images/daily-temp.png" width="400">
+</center>
 
-* We are given a list of temperatures over multiple days, we are to 
-find, for every individual day, after how many days will a warmer day arrive. 
+* We are given a list of temperatures over multiple days, we are to find, for every individual day, after how many days will a warmer day arrive.
 
-* If you think about these temperatures as just numbers, then what we have to 
-do here is: Given a list of numbers, for every number find out the index of the next
-higher element in the list. That's all we have to do to solve this question.
+* If you think about these temperatures as just numbers, then what we have to
+do here is:
 
-* We don't need to report the actual index of the next larger element, we need to 
-report the distance of that index from the current index. 
+  >Given a list of numbers, for every number, we have to find out the index of the next higher element in the list. That's all we have to do to solve this question.
+
+* We don't need to report the actual index of the next larger element, we need to report the distance of that index from the current index.
 
 * This classic problem can be solved by two different data structures
     1. Heap
     2. Stack
-    
-### Heap based Solution
 
-* So, the idea here is very simple. We keep on iterating on the list of 
-numbers in the forward direction and we do the following for each element.
+---
+### Solution 1: Using Heaps
 
-* For every element, we pop all smaller elements from the heap. The current element
-will act as the next higher element for all of these smaller elements that 
-are there in the heap. Note: if this was not the case and some previous index would 
-have been the next larger element for some of these elements in the heap, then
-they would not be there in the heap in the first place at this point. 
+1. So, the idea here is very simple. We keep on iterating over the list of numbers and we do the following for each element.
 
-* After removing all the smaller elements from the heap and assigning their 
-next largest element properly, we add the current element to the heap and we 
-move forward. 
+2. We pop all smaller elements from the heap. The current element will act as the next higher element for all of these smaller elements that are there in the heap. Note: if this was not the case and some previous index would
+have been the next larger element for some of these elements in the heap, then they would not be there in the heap in the first place at this point.
 
-* **Time Complexity**: `O(nlogn)` we eventually push and pop every element from the heap.
-* **Space Complexity**: `O(n)` for the heap.      
+3. After removing all the smaller elements from the heap and assigning their next largest element properly, we add the current element to the heap and we move forward.
 
-### Stack based solution
+* **Time Complexity**: `O(NlogN)` since we eventually push and pop every element from the heap and considering we have `N` elements in the heap.
+* **Space Complexity**: `O(N)` as occupied by the heap.      
 
-* It turns out that we can do better on this task, complexity wise by using the 
-stack data structure. 
+### Solution 2: Using Stack
 
-* We iterate on the array in reverse. 
+It turns out that we can do better on this task, complexity wise by using the stack data structure.
 
-* For every element we do these steps:
-    1. Pop all the elements from the stack that are smaller than this element 
-    or until the stack becomes empty. 
-    2. If we found an element that was larger than this element, then that
-    element on the stack would be the next larger element corresponding to the
-    current element. 
-    3. If the stack became empty, then this current element is the largest one
-    till now. 
+1. We iterate on the array in reverse.
+
+2. For every element we do these steps:
+    1. Pop all the elements from the stack that are smaller than the current element or until the stack becomes empty.
+    2. If we find an element that was larger than the current element, then that element on the stack would be the next larger element corresponding to the
+    current element.
+    3. If the stack becomes empty, then the current element is the largest one till now.
     4. Add the current element to the stack and repeat the process.
-    **Note:** We are moving in the reverse direction on the array for this to work.
-    
-* **Time Complexity:** `O(n)`
-* **Space Complexity:** `O(n)`  
+    `Note:` We are moving in the reverse direction on the array for this to work.
 
-### Dry Run
+* **Time Complexity:** `O(N)` since we process each element in the given array exactly once.
+* **Space Complexity:** `O(N)` since the stack may contain `N` elements in the worst case.  
 
-* Let us try and dry run the stack based algorithm on the following example. 
+##### Dry Running the Stack solution
 
-* A slight modification to the algorithm described above, we add the element's index to the stack and 
-not the actual element because the question asks us to print the number of days 
-till the next warmer day.
+Let us try and dry run the stack based algorithm on the following example. As a slight modification to the algorithm described above, we add the element's index to the stack and not the actual element because the question asks us to print the number of days till the next warmer day.
 
 ```
 [75, 69, 72, 76, 73]
  <-----------------
- 
+
  * i = 4, element = 73, stack = []
-    --> add 4 to the stack as stack is empty.
+    --> add 4 to the stack.
     --> next_largest[4] = 0
- 
+
  * i = 3, element = 76, stack = [4]
     --> Pop until stack empty or larger element found.
     --> element > temperatures[stack[top]], therefore stack.pop()
     --> next_largest[3] = 0
     --> add 3 to the stack    
- 
+
  * i = 2, element = 72, stack = [3]
     --> element < temperatures[stack[top]]
     --> next_largest[2] = stack[top] - i = (3 - 2) = 1
     --> add 2 to the stack
-    
+
  * i = 1, element = 69, stack = [2, 3]
     --> element < temperatures[stack[top]]
     --> next_largest[4] = stack[top] - i = (2 - 1) = 1
     --> add 1 to the stack
-    
+
  * i = 0, element = 75, stack = [1, 2, 3]
-    --> Pop until stack empty or larger element found. 
+    --> Pop until stack empty or larger element found.
     --> element > temperatures[stack[top]], therefore stack.pop()
     --> element > temperatures[stack[top]], therefore stack.pop()
     --> element < temperatures[stack[top]]
