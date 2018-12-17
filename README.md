@@ -12,7 +12,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     ```
     git clone https://github.com/DivyaGodayal/CoderChef-Kitchen.git
     ```
-2. For every problem, we expect you to create a separate folder in the respective section. For e.g. if you are solve a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
+2. For every problem, we expect you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
 
     ```
     mkdir Dynamic-Programming/<Problem Name>
@@ -24,7 +24,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     touch README.md
     touch solution.py
     ```
-4. For writing the README.md file, follow the template provided [Here](template.md)
+4. For writing the README.md file, follow the template provided [Here](Template/template.md)
 5. Ideally, every approach to a programming problem should have the following sections:
       1. Motivation.
       2. Algorithm.
@@ -43,41 +43,242 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     ```
 8. Raise a Pull Request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
 
-|    | Problem                             | Platform | Link                                                                                                                       |
-|----|-------------------------------------|----------|----------------------------------------------------------------------------------------------------------------------------|
-| 1  | Daily-Temperatues                   | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Daily-Temperatues)                              |
-| 2  | Fake-Binary-Search                  | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Fake-Binary-Search)                             |
-| 3  | Fizz-Buzz                           | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Fizz-Buzz)                                      |
-| 4  | Hand-of-Straights                   | CodeChef | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Hand-of-Straights)                              |
-| 5  | Implement-Magic-Dictionary          | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Implement-Magic-Dictionary)                     |
-| 6  | Integer-to-English-Words            | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Integer-to-English-Words)                       |
-| 7  | Lemonade-Change                     | CodeChef | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Lemonade-Change)                                |
-| 8  | Min-Rotated-Sorted-Array            | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Min-Rotated-Sorted-Array)                       |
-| 9  | Minimum-Refueling-Stops             | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Minimum-Refueling-Stops)                        |
-| 10 | Score-After-Flipping-Matrix         | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Score-After-Flipping-Matrix)                    |
-| 11 | Score-of-Parentheses                | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Score-of-Parentheses)                           |
-| 12 | Set-Matrix-Zeros                    | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Set-Matrix-Zeros)                               |
-| 13 | Spiral-Matrix                       | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Spiral-Matrix)                                  |
-| 14 | Split-Array-into-Fibonacci-Sequence | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Split-Array-into-Fibonacci-Sequence)            |
-| 15 | Task-Scheduler                      | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Task-Scheduler)                                 |
-| 16 | 2-Keys                              | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/2-Keys)                           |
-| 17 | 4-Keys                              | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/4-Keys)                           |
-| 18 | Change-the-Signs                    | CodeChef | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Change-the-Signs)                 |
-| 19 | Matchsticks-to-Square               | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Matchsticks-to-Square)            |
-| 20 | Soup-Servings                       | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Soup-Servings)                    |
-| 21 | All-Nodes-Distance-K-in-Binary-Tree | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/All-Nodes-Distance-K-in-Binary-Tree) |
-| 22 | Bus-Routes                          | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Bus-Routes)                          |
-| 23 | Cheapest-Flight-Within-K-Stops      | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Cheapest-Flight-Within-K-Stops)      |
-| 24 | Cracking-the-Safe                   | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Cracking-the-Safe)                   |
-| 25 | Evaluate-Division                   | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Evaluate-Division)                   |
-| 26 | Flatten-Binary-Tree                 | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Flatten-Binary-Tree)                 |
-| 27 | Making-A-Large-Island               | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Making-A-Large-Island)               |
-| 28 | Path-Sum                            | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Path-Sum)                            |
-| 29 | Remove-Invalid-Parenthesis          | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Remove-Invalid-Parenthesis)          |
-| 30 | Sum-of-Distances-In-a-Tree          | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Sum-of-Distances-In-a-Tree)          |
-| 31 | Word-Search                         | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Word-Search)                         |
-| 32 | DeepCopy                            | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/DeepCopy-LinkedList)                      |
-| 33 | Isomorphic-Strings                  | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Isomorphic-Strings)                           |
-| 34 | Minimum-Window-Substring            | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Minimum-Window-Substring)                     |
-| 35 | Partition-Labels                    | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Partition-Labels)                             |
-| 36 | Reorganize_String                   | LeetCode | [Link](https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Reorganize_String)                            |
+<table>
+  <tr>
+    <th colspan="4"><h3>Adhoc Problems</h3></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><b>Problem</b></td>
+    <td><b>Platform</b></td>
+    <td><b>Link</b></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Daily Temperatues</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Daily-Temperatues">Link</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Fake Binary Search</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Fake-Binary-Search">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Fizz Buzz</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Fizz-Buzz">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Hand of Straights</td>
+    <td>CodeChef</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Hand-of-Straights">Link</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Implement Magic Dictionary</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Implement-Magic-Dictionary">Link</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Integer to English-Words</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Integer-to-English-Words">Link</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Lemonade Change</td>
+    <td>CodeChef</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Lemonade-Change">Link</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Minimum in Rotated Sorted Array</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Min-Rotated-Sorted-Array">Link</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Minimum Refueling Stops</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Minimum-Refueling-Stops">Link</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Score After Flipping Matrix</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Score-After-Flipping-Matrix">Link</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Score of Parentheses</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Score-of-Parentheses">Link</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Set Matrix Zeros</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Set-Matrix-Zeros">Link</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Spiral Matrix</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Spiral-Matrix">Link</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Split Array into Fibonacci Sequence</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Split-Array-into-Fibonacci-Sequence">Link</a></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Task Scheduler</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Task-Scheduler">Link</a></td>
+  </tr>
+  <tr>
+    <th colspan="4"><h3>Dynamic Programming</h3></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2-Keys</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/2-Keys">Link</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>4-Keys</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/4-Keys">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Change the Signs</td>
+    <td>CodeChef</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Change-the-Signs">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Matchsticks to Square</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Matchsticks-to-Square">Link</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Soup Servings</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Soup-Servings">Link</a></td>
+  </tr>
+  <tr>
+    <th colspan="4"><h3>Graphs and Trees</h3></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>All Nodes Distance K in Binary Tree</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/All-Nodes-Distance-K-in-Binary-Tree">Link</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Bus Routes</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Bus-Routes">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Cheapest Flight Within K Stops</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Cheapest-Flight-Within-K-Stops">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Cracking the Safe</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Cracking-the-Safe">Link</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Evaluate Division</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Evaluate-Division">Link</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Flatten Binary Tree</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Flatten-Binary-Tree">Link</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Making A Large Island</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Making-A-Large-Island">Link</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Path Sum</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Path-Sum">Link</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Remove Invalid Parenthesis</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Remove-Invalid-Parenthesis">Link</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Sum of Distances In a Tree</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Sum-of-Distances-In-a-Tree">Link</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Word Search</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Word-Search">Link</a></td>
+  </tr>
+  <tr>
+    <th colspan="4"><h3>Linked-List</h3></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>DeepCopy</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/DeepCopy-LinkedList">Link</a></td>
+  </tr>
+  <tr>
+    <th colspan="4"><h3>Strings</h3></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Isomorphic Strings</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Isomorphic-Strings">Link</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Minimum Window Substring</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Minimum-Window-Substring">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Partition Labels</td>
+    <td>LeetCode</td>
+    <td><br><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Partition-Labels%E2%80%8B">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Reorganize String</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Reorganize_String">Link</a></td>
+  </tr>
+</table>
