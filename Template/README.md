@@ -1,4 +1,4 @@
-We tend to follow a set template for writing the articles on the CoderChef platform. If you are a writer who wants to contribute new articles to the repository, please download the template available [here](template.md).
+We tend to follow a set template for writing the articles on the CoderChef platform. The template is described in detail here, in this writeup. If you are a writer who wants to contribute new articles to the repository, please download the barebones structure of the template available [here](template.md).
 
 ## Template Description
 
