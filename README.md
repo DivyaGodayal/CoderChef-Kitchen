@@ -273,7 +273,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td>3</td>
     <td>Partition Labels</td>
     <td>LeetCode</td>
-    <td><br><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Partition-Labels%E2%80%8B">Link</a></td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Strings/Partition-Labels%E2%80%8B">Link</a></td>
   </tr>
   <tr>
     <td>4</td>
