@@ -1,14 +1,11 @@
-## SOLUTION
----
-
 <p align="center">
 <img src="../../Images/Lemonade-Change.png" width="600">
 </p>
 
 ---
-#### Solution 1: Greedy Approach
+### Solution 1: Greedy Approach
 
-##### Motivation
+#### Motivation
 
 * This problem demands a basic greedy approach all of us follow in our day to day life.
 `Let me save the change, I might need it later`.
@@ -30,7 +27,7 @@ If you are like me, you would give the $10 note and keep those two $5 notes for 
 
 So now you want to have a cup of green tea which would cost $5 and the tea vendor has a board outside his shop which says **Only $5 notes accepted.** Now, in this case you need to have those two $5 notes. Had you given the two $5 notes earlier for the energy bar, you would not have been able to have the delicious green tea :P
 
-##### Algorithm
+#### Algorithm
 
 * This is all this questions wants. Be greedy!
 
@@ -45,7 +42,14 @@ So now you want to have a cup of green tea which would cost $5 and the tea vendo
   2. The customer comes in with a `$10` note. In that case you need to return $5 to the customer. You check if you have a $5 note, if you do, then you take it out from your collection and give it to the customer. Also add the $10 to your collection. `Five-Dollar-Notes - 1` and `Ten-Dollar-Notes + 1`
   3. The customer comes in with a `$20` note. In that case you need to return $15 to the customer. Now you could either give back `one $10 and one $5` or `three $5`. If you are smart, you would first try the former option. Since you would want to reserve the $5 notes for later use. Also you don't add $20 to your change collections, Since you can't exchange it for any other transaction. So you either do (`Five-Dollar-Notes - 1` and `Ten-Dollar-Notes - 1`) or `Five-Dollar-Notes - 3`.
 
-##### Complexity Analysis
+#### Complexity Analysis
 
-* **Time Complexity** O(N), where N is the length of bills.
-* **Space Complexity**: O(1).
+* Time Complexity: O(N), where N is the length of bills.
+* Space Complexity: O(1).
+
+#### Link to OJ
+
+https://leetcode.com/problems/lemonade-change/description/
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal).

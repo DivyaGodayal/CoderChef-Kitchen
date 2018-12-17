@@ -24,7 +24,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     touch README.md
     touch solution.py
     ```
-4. For writing the README.md file, follow the template provided [Here](Template/README.md)
+4. For writing the README.md file, follow the template provided [here](Template/README.md).
 5. Ideally, every approach to a programming problem should have the following sections:
       1. Motivation.
       2. Algorithm.
