@@ -24,7 +24,7 @@ As we can see, we have so many options. Essentially, every point becomes a poten
 But wait a minute, what if I tell you there's a better solution ? :P
 
 <p align="center">
-<img src="https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/6/66/Really_a_pony_version_of_a_meme_some_bronies_really_2fb4eedd3de7d2f02ac5b5b683891f6d.jpg/revision/latest?cb=20121113202035" width="600">
+<img src="https://vignette.wikia.nocookie.net/adventuretimewithfinnandjake/images/6/66/Really_a_pony_version_of_a_meme_some_bronies_really_2fb4eedd3de7d2f02ac5b5b683891f6d.jpg/revision/latest?cb=20121113202035" width="400">
 </p>
 
 #### Algorithm
