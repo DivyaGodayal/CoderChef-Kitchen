@@ -53,3 +53,6 @@ Some things that we always take into consideration are as follows:
 #### Link to OJ
 
 In case the problem is available on some online judge, do add the link under this heading so that the reader can go ahead and try the problem for themself as well.
+
+---
+Article contributed by [Sachin Malhotra](https://github.com/edorado93) and [Divya Godayal](https://github.com/DivyaGodayal).
