@@ -49,3 +49,7 @@ Some things that we always take into consideration are as follows:
 * The data-structure to be returned does not add to the space complexity of the algorithm. For e.g. if the question asks you to return a list of numbers, then the space occupied by this list will not be a part of the space complexity.
 * Recursion stack always contributes to the space complexity. For e.g. if you have a binary tree problem, then the space will definitely be `omega(N)` since the tree can be skewed.
 * Pruning strategies don't affect the algorithmic complexity, but they do speed up the actual code a lot.
+
+#### Link to OJ
+
+In case the problem is available on some online judge, do add the link under this heading so that the reader can go ahead and try the problem for themself as well.

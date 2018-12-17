@@ -22,5 +22,9 @@
 * Time Complexity:
 * Space Complexity:
 
+#### Link to OJ
+
+<!-- Add link here if available -->
+
 ---
 Article contributed by [Username](Github Profile)
