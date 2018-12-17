@@ -100,15 +100,15 @@ The question however does not ask us what modification we should make to get a w
 
 If you look at the structures of the two words, you will see this similar structure.
 
-    ```
-    *ello
-    ```
+```
+*ello
+```
 
 Similarly, for the dictionary word `helbo` and our search word `hello`, we will have the following similar structure.
 
-    ```
-    hel*o
-    ```
+```
+hel*o
+```
     
 > What if, given a dictionary word, we can store all its possible structures in our dictionary. Instead of 
 storing the actual word itself. So, for a given word we will have the following structures possible. 
