@@ -25,7 +25,7 @@ If you are like me, you would give the $10 note and keep those two $5 notes for 
 
 `Why? Because...`
 
-So now you want to have a cup of green tea which would cost $5 and the tea vendor has a board outside his shop which says **Only $5 notes accepted.** Now, in this case you need to have those two $5 notes. Had you given the two $5 notes earlier for the energy bar, you would not have been able to have the delicious green tea :P
+So now you want to have a cup of green tea which would cost $5 and the tea vendor has a board outside his shop which says `Only $5 notes accepted.` Now, in this case you need to have those two $5 notes. Had you given the two $5 notes earlier for the energy bar, you would not have been able to have the delicious green tea :P
 
 #### Algorithm
 
@@ -44,8 +44,8 @@ So now you want to have a cup of green tea which would cost $5 and the tea vendo
 
 #### Complexity Analysis
 
-* Time Complexity: O(N), where N is the length of bills.
-* Space Complexity: O(1).
+* Time Complexity: `O(N)`, where N is the length of bills.
+* Space Complexity: `O(1)`.
 
 #### Link to OJ
 
