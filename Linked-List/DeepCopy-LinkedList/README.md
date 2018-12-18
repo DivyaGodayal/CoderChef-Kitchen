@@ -28,11 +28,11 @@ We start from the root node and we keep traversing the tree (list) and we keep g
 
 #### Complexity Analysis
 
-* Time complexity: O(n). Where n is the number of nodes in the list. 
-* Space complexity: O(n). If we look closely, we have the recursion stack, then we have the space complexity to keep track of nodes already cloned. But asymptotically, the complexity is O(n)
+* Time complexity: `O(N)`. Where n is the number of nodes in the list. 
+* Space complexity: `O(N)`. If we look closely, we have the recursion stack, then we have the space complexity to keep track of nodes already cloned. But asymptotically, the complexity is `O(N)`
 
 ---
-### Solution 2: Iterative Approach
+### Solution 2: Two Passes - Iterative 
 
 #### Motivation
 
@@ -47,11 +47,13 @@ The iterative solution to this problem does not model it as a tree and instead s
 
 #### Complexity Analysis
 
-* Time complexity: O(n) because we make 2 passes over the original list.
-* Space complexity: O(n) as we have a dictionary containing mapping from old list nodes to new list nodes. Since there are `n` nodes, we have O(n) space complexity.
+* Time complexity: `O(N)` because we make 2 passes over the original list.
+* Space complexity: `O(N)` as we have a dictionary containing mapping from old list nodes to new list nodes. Since there are `N` nodes, we have `O(N)` space complexity.
 
-##### SINGLE PASS ITERATIVE SOLUTION
+---
+### Solution 3: Single Pass - Iterative 
 
+#### Algorithm
 1. We can also solve this problem in a single pass. 
 2. When we are iterating over the list, we make a new node using the `next` pointer essentially, right? We cannot assign the random pointers in the first pass because the random pointer may point to say the last node and we don't have a clone for that node yet. So we simply assigned the next pointers in the first pass and in the second pass we assigned the random pointer. 
 3. However, we can create new nodes via the random pointer or the next pointer whichever points to a node that doesn't exist in our old --> new dictionary. Say, if the random pointer of the first node points to the last node, we will create a new node corresponding to the last node and add it to the dictionary. Then, when we will be at the second last node during our iteration, we will check the dictionary to see if a clone already exists for the last node. Since a clone exists, we will simply assing the `next` pointer of the secon last node and move on. Take a look at the diagram below 
@@ -59,6 +61,12 @@ The iterative solution to this problem does not model it as a tree and instead s
 <p align="center">
 <img src="../../Images/CopyLinkedList-SinglePass.png" width="500">
 </p>
+
+
+#### Complexity Analysis
+
+* Time complexity: `O(N)` because we make single pass over the original list.
+* Space complexity: `O(N)` as we have a dictionary containing mapping from old list nodes to new list nodes. Since there are `N` nodes, we have `O(N)` space complexity.
 
 #### Link to OJ
 https://leetcode.com/problems/copy-list-with-random-pointer/
