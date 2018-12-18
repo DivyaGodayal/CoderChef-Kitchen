@@ -10,10 +10,10 @@
 
 * This problem is similar to the longest increasing subsequence problem.
 
-Lets define dp[j]:
-`dp[j] -  the farthest location we can get to using j refueling stops.`
+  Lets define dp[j]:
+  `dp[j] -  the farthest location we can get to using j refueling stops.`
 
-e.g. If dp[2] = 200 miles, this means we can reach a max distance 200 miles from the start location by refueling at 2 stations.
+  e.g. If dp[2] = 200 miles, this means we can reach a max distance 200 miles from the start location by refueling at 2 stations.
 
 * We need to reach the target in the minimum number of steps/stations. Hence, we want the smallest `i` for which `dp[i] >= target`.
 
@@ -22,10 +22,10 @@ e.g. If dp[2] = 200 miles, this means we can reach a max distance 200 miles from
 * We visit each station in order. For every station we check the dp array moving backwards from the current index.
 If the value of the dp cell `dp[j]`, where `j < i` indicates that its reach is equal to or beyond the current station's location `stations[i]`, this means with `j` refueling stops the car can reach or possibly cross the station `i`. Hence we add the current station's fuel to `dp[j]` and we find the max of all possible `j`'s.
 
-`stations[i][1] = Fuel at Station i.
-dp[j+1] = max((dp[j] + stations[i][1]), dp[j+1])
-dp[j+1] = the farthest location we can get to using j + 1 refueling stops.
-`
+  `stations[i][1] = Fuel at Station i.
+  dp[j+1] = max((dp[j] + stations[i][1]), dp[j+1])
+  dp[j+1] = the farthest location we can get to using j + 1 refueling stops.
+  `
 
 * Any time we could reach (or cross) a station, `station[i] = (location, capacity)` with `j` refueling stops
 ,`dp[j]`, we can now reach that distance plus `capacity` i.e. `dp[j] + capacity` with j+1 refueling stops.
