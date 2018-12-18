@@ -64,7 +64,7 @@ T | I | T | L | E = 0 | 1 | 0 | 3 | 4
 * Space Complexity: O(N)
 
 ---
-### Solution 1: O(N) Approach
+### Solution 2: O(N) Approach
 
 #### Motivation
 
