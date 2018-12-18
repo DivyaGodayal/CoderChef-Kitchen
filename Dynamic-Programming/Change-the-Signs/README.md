@@ -1,5 +1,7 @@
 
-![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Change-the-signs.png)
+<p align="center">
+<img src="../../Images/Change-the-signs.png" width="600">
+</p>
 
 We are given a sequence of numbers and we have a certain operation we can perform on them. The operation is that we can negate some (possibly none) subsequence of numbers from the given list. So eg:- Let us consider this following list of numbers
 
@@ -27,22 +29,30 @@ Not all of these are valid, however. The valid subsequences are the ones where *
 -4 -3 1 2 INVALID
 ```
 
-As you can clearly see, we only have 2 valid subsequences that can be obtained  by performing the operation mentioned above. **Note:** we haven't written down all the possible subsequences. That would be 2^n i.e. 16 in this case because for every number we have two options. Either to negate it, or not.
+As you can clearly see, we only have 2 valid subsequences that can be obtained  by performing the operation mentioned above. `Note:` we haven't written down all the possible subsequences. That would be 2^n i.e. 16 in this case because for every number we have two options. Either to negate it, or not.
 
-Now the 2 valid set of numbers are `4 3 1 2` and `4 3 -1 2`. We need to return the set that has the **MINIMUM OVERALL SUM** which would be `4 3 -1 2` in this case. 
+Now the 2 valid set of numbers are `4 3 1 2` and `4 3 -1 2`. We need to return the set that has the `minimum overall sum` which would be `4 3 -1 2` in this case. 
 
-## Dynamic Programming Solution 
+---
+### Solution 1: Dynamic Programming
+
+#### Motivation
 
 This problem can be solved by dynamic programming and is divided into two basic parts. 
-* One is the main dynamic programming recursion that we use to find out the **minimum sum of the final set**. Note, the dynamic programming is not directly used to obtain the final set, just the final sum of the set. So our dynamic programming approach would correctly find out the sum for the example given above as 8. `4 + 3 + (-1) + 2 = 8`. 
-* What we actually need is the final modified set of numbers where some (possibly none) of the numbers are negated. We use the concept of a **parent pointer** and backtracking to find out the actual set of numbers. 
+
+#### Algorithm
+
+One is the main dynamic programming recursion that we use to find out the `minimum sum of the final set`. Note, the dynamic programming is not directly used to obtain the final set, just the final sum of the set. So our dynamic programming approach would correctly find out the sum for the example given above as 8. `4 + 3 + (-1) + 2 = 8`. 
+
+What we actually need is the final modified set of numbers where some (possibly none) of the numbers are negated. We use the concept of a **parent pointer** and backtracking to find out the actual set of numbers. 
 
 Let's move onto our recursion relation for our dynamic programming approach. 
-Before describing the recursive relation an important observation to make here is that if a number has been negated, **then any adjacent number to it can not be negated** i.e. two adjacent numbers cannote be negated as that would give a substring of length 2 whose sum is negative and that is not allowed according to the question. 
+
+Before describing the recursive relation an important observation to make here is that if a number has been negated, `then any adjacent number to it can not be negated` i.e. two adjacent numbers cannote be negated as that would give a substring of length 2 whose sum is negative and that is not allowed according to the question. 
 
 For the recurrence relation, we need two variables. One is the index number of where we are in the array and one is a boolean value that tells is if the previous number (one left to the previous number) is negated or not. i.e. if the current index is `i` , then the boolean value would tell us if the number at `i-2` was negated or not. You will know the importance of this boolean variable in the next paragraph. 
 
-We need to know in `O(1)` if a number **can** be negated or not. Since we are following a recursion with memoization based solution, whenever we are at an index `i` in the recursion, we are sure that the numbers to the right i.e. `i+1` onwards have not been processed till now meaning that all of them are still positive. 
+We need to know in `O(1)` if a number `can` be negated or not. Since we are following a recursion with memoization based solution, whenever we are at an index `i` in the recursion, we are sure that the numbers to the right i.e. `i+1` onwards have not been processed till now meaning that all of them are still positive. 
 
 The choice of if the number at index `i` can be negated is dependent upon the right hand side (if there is one) and the left hand side (if there is one). The right hand side is easy. All we need to check is if 
 
@@ -65,17 +75,17 @@ Here comes in the boolean variable which tells us if, given an index `i`, if the
 Consider the pseudo-code-ish for a better understanding of the recursion. 
 
 ```
-def recurse (index, was_prev_negated) 
+def recurse (i, was_prev_negated) 
 {
 	# No number left to process
-	if index == N:
+	if i == N:
 		return 0
 	
 	# If we keep the number at index i positive only. 
-	keep_positive = recurse(index + 1, false) + numbers[i]
+	keep_positive = recurse(i + 1, false) + numbers[i]
 	
-	right_check = (i == N - 1	or numbers[i] < numbers[i + 1])
-	if 	was_prev_negated == True:
+	right_check = (i == N - 1 or numbers[i] < numbers[i + 1])
+	if was_prev_negated == True:
 		left_check = numbers[i] < (numbers[i-1] - numbers[i-2])
 	else:
 		left_check = numbers[i] < numbers[i-1]	
@@ -87,7 +97,7 @@ def recurse (index, was_prev_negated)
 		# i + 1 must be positive. 
 		keep_negative = recurse(i + 2, true) + (-numbers[i]) + (i < numbers.size() - 1 ? numbers[i + 1] : 0)
 
-		return min(keep_positive, keep_negative)
+	return min(keep_positive, keep_negative)
 }
 ```
 
@@ -101,9 +111,7 @@ All this is fine dandy, but the question asks us to actually print the final set
 
 So we simply store 1 or -1 depending upon if we chose to negate the number at the index i or not. 
 
-## Backtracking
-
-Now comes the part where we backtrack to find the solution to our original problem. Note, the decision for the very first number is what propagates the recursion further. i.e. if the first number was negated, the second number would be positive and the third number's decision can be found using `parent[2][true]`. Similarly, if the first number wasn't negated, then we move onto the second number and it's decision can be found using `parent[1][false]` and so on. Look at the pseudo-code-ish
+**Backtracking:** Now comes the part where we backtrack to find the solution to our original problem. Note, the decision for the very first number is what propagates the recursion further. i.e. if the first number was negated, the second number would be positive and the third number's decision can be found using `parent[2][true]`. Similarly, if the first number wasn't negated, then we move onto the second number and it's decision can be found using `parent[1][false]` and so on. Look at the pseudo-code-ish
 
 ```
 def retrace(was_first_number_negated):
@@ -130,7 +138,17 @@ def retrace(was_first_number_negated):
 				print numbers[i + 1] # We know for sure this would be positive if ith index was negated.
 
 ```
-## Better Approach
+
+#### Complexity Analysis
+
+* Time Complexity: Although, at every index we have 2 possible choices, that would lead to `O(2^N)`. However, we are memoizing the results. In that case the time complexity comes down to `O(2*N)` = `O(N)`
+* Space Complexity: `O(N)` used by the recursion stack
+
+---
+### Solution 2: One-D Dynamic Programming
+
+#### Algorithm
+
 This problem could even be solved by 1 Dimensional DP.
 Instead of checking for the capacity check on the left side, we can look foward. 
 Which simply means if you are at an index, you check if that element along with the element at index+2 have the capacity to swallow the element at index+1. If there is a possibility of swallow then we directly jump to index+3, if we negate element at index because element at index+1 and index+2 both can't be negative.
@@ -140,9 +158,12 @@ Which simply means if you are at an index, you check if that element along with 
 SWALLOW POSSIBLE 
 4,[1],2,1,3,1,2
 ```
-**Left, Right and Swallow check satisfied at index = 1**
+
+`Left, Right and Swallow check satisfied at index = 1`
+
 If we negate the element at index = 1 i.e.[1], we can't negate
 elements at 
+
 ```
 index = 2 
 4,-1,-2,1,3,1,2 \\INVALID
@@ -153,7 +174,6 @@ index = 3
 ```
 Hence we jump to index = 4
 
----
 ```
 SWALLOW NOT POSSIBLE 
 4,[1],3,1,3,1,2 
@@ -164,7 +184,6 @@ If the swallow is not possible then we jump to index = 3.
 index = 3 
 4,-1,2,[1],3,1,2 //Still valid
 ```
----
 
 Below is a small snippet from the code for the above condition. Please check the solution provided to understand things better. 
 
@@ -182,3 +201,15 @@ Bactracking has a similar change, we look forward instead.
 Since at any point we are looking forward and jump to the index only if its a possible canditate for negatition in that particular recursion we save ourselves from keeping an extra recursion variable - ```was_prev_negated```
 
 Hence just one recursion variable i.e. the current index.
+
+#### Complexity Analysis
+
+* Time Complexity: `O(N)`
+* Space Complexity: `O(N)`
+
+#### Link to OJ
+
+https://www.codechef.com/MAY18A/problems/CHSIGN
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal)
