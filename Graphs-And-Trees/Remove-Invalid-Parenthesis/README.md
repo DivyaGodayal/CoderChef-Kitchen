@@ -59,7 +59,7 @@ to be `O(1)` although it is not.
 * Space Complexity: `O(2^N)` because of the recursion stack.
 
 ---
-### Solution 1: Intelligent Recursive Solution
+### Solution 2: Intelligent Recursive Solution
 
 #### Motivation
 
