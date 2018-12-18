@@ -1,6 +1,9 @@
-![alt text](https://raw.githubusercontent.com/DivyaGodayal/CoderChef-Kitchen/master/Images/Spiral-Matrix.png)
+<p align="center">
+<img src="../../Images/Spiral-Matrix.png" width="600">
+</p>
 
-## SOLUTION 1 (ITERATIVE)
+---
+### Solution 1: Iterative
 
 This solution is based on the idea of printing the matrix from the outermost perimeter to the inside and this does the job in an iterative fashion. As for maintaining the direction and switching when we hit the boundaries, we just need the tuples
 
@@ -37,10 +40,10 @@ while count > 0
 
  This simple piece of code covers all of the edge cases and there are a lot of edge cases to cover eg: a matrix with just 1 element, a row matrix, a column matrix etc. Thanks to our chef Divya Godayal for coming up with this simple yet effective piece of code. Kudos!
 
-## SOLUTION 2 (Recursive)
+### Solution 2: Recursive
 
  Following is a slightly complicated recursive implementation of the same problem. So this is how we would go about printing the matrix if there are N rows and M columns
- 
+
  * 1st row
  * Mth column
  * Nth row
@@ -68,3 +71,10 @@ In a similar fashion we now print out the last column starting from `i=1 and j=e
 We keep printing in this fashion, first the last row and then the first column from bottom to top. When we reach the first element i.e. `i = s_r and j = s_c` that means we have printed out the perimeter and now we can recurse on the remaining matrix i.e. `(s_r + 1, s_c + 1, e_r - 1, e_c - 1)`.
 
 Have a look at the code for some edge cases and better clarity.
+
+#### Link to OJ
+
+https://leetcode.com/problems/spiral-matrix/description/
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal)
