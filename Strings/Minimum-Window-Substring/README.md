@@ -29,24 +29,23 @@ left                                right (some condition met)
 * The answer is the smallest desirable window.
 
   For eg. ` S = "ABAACBAB" T = "ABC" Then our answer window is "ACB" but shown below is one of the possible desirable windows.`
-  <center>
-  <img src="../../Images/Minimum-Window-Substring-1.png" width="500"/>
-  </center>
-
+  <p align="center">
+  <img src="../../Images/Minimum-Window-Substring-1.png" width="500">
+  </p>
+  
 * Once we have a window with all the characters, we can move the left pointer ahead one by one. If the window is still a desirable one we keep saving it if its the minimum till now.
 
 * If the window is not desirable any more. We try to make it desirable again by moving the right pointer this time.
-
-  <center>
-  <img src="../../Images/Minimum-Window-Substring-2.png" width="500"/>
-  </center>
+  
+  <p align="center">
+  <img src="../../Images/Minimum-Window-Substring-2.png" width="500">
+  </p>
 
 * The above steps are repeated until we have looked into all the windows. The smallest window is returned.
 
-  <center>
-  <img src="../../Images/Minimum-Window-Substring-3.png" width="500"/>
-  </center>
-
+  <p align="center">
+  <img src="../../Images/Minimum-Window-Substring-3.png" width="500">
+  </p>
 
 #### Complexity Analysis
 
