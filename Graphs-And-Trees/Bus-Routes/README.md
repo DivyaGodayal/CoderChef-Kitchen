@@ -55,7 +55,7 @@ Have a look at a sample graph from the bus routes to get a better idea of how th
 
 #### Complexity Analysis
 
-* Time Complexity: `O(V + E)` where V = number of bus routes, E = number of edges which in the worst case would be `O(V<sup>2</sup>)`. Also, creating the adjacency list takes time = `O(V<sup>2</sup>)` considering set intersection is `O(1)`.
+* Time Complexity: `O(V + E)` where V = number of bus routes, E = number of edges which in the worst case would be `O(V^2)`. Also, creating the adjacency list takes time = `O(V^2)` considering set intersection is `O(1)`.
 
 * Space Complexity: `O(V)` where V = number of bus routes.
 
