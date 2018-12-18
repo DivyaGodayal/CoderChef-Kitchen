@@ -51,6 +51,7 @@ This simple piece of code covers all of the edge cases and there are a lot of ed
 * Time Complexity: `O(MN)`
 * Space Complexity: `O(1)`
 
+---
 ### Solution 2: Recursive
 
 #### Motivation
@@ -61,7 +62,6 @@ This simple piece of code covers all of the edge cases and there are a lot of ed
  * Mth column
  * Nth row
  * 1st column
- ---
  * 2nd row
  * (M - 1)th column
  * (N - 1)th row
