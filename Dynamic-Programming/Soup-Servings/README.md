@@ -28,9 +28,9 @@ Thats when you let DP, go through all the combinations.
 
 #### Complexity Analysis
 
-* Time Complexity: O(1) (There exists a constant C such that the algorithm never performs more than C steps.)
+* Time Complexity: `O(1)` 
 
-* Space Complexity: O(1) (There exists a constant C such that the algorithm never uses more than C space.)
+* Space Complexity: `O(1)` 
 
 #### Link to OJ
 
