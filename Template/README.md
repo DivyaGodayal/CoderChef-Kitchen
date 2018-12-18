@@ -23,6 +23,8 @@ What follows the screenshot is a basic problem introduction. In case you might w
 ---
 ### Solution 1: < Approach Name >
 
+Every solution that you add must be separated by a horizontal line ```---``` as shown above. Following are the various sections that a part of each solution. 
+
 #### Motivation
 
 Each approach should have 3-4 subsections starting off with the motivation section. Here you should describe the basic motivation for the current approach for solving the problem. Add what is the core idea behind the algorithm.
