@@ -50,7 +50,7 @@ The `brute` way of approaching this problem would be to try all possible paths w
 1. In the optimal solution we traverse the tree one node at a time in regular depth first fashion. Keeping a track of the sum down any path till that node and calling it the `running_sum`.
 
     <p align="center">
-    <img src="../../Images/Path-Sum-Diag3" width="500">
+    <img src="../../Images/Path-Sum-Diag3.png" width="500">
     </p>
 
    Storing these running sum in a dictionary helps to keep a track of what all milestones we have reached so far. Since this is a cummulative sum we can at any time find the difference between any milestone to find the distance for any sub-path.
@@ -81,7 +81,7 @@ The `brute` way of approaching this problem would be to try all possible paths w
 #### Complexity Analysis
 
 * Time Complexity: `O(N)`, Number of nodes in the tree = N
-* Space Complexity: This is decided by the running sum values that we are storing. In the worst case this would be `O(S)` where S is the sum we want to form.
+* Space Complexity: `O(N)`
 
 #### Link to OJ
 
