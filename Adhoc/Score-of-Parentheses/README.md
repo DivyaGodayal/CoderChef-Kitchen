@@ -5,23 +5,26 @@
 ---
 ### Solution 1:
 
-#### Algorithm
+#### Motivation
 
-* The question's description begs us to use the standard stack based approach
+The question's description begs us to use the standard stack based approach
 that is pretty famous for these types of questions.
 
-* So, we keep processing one character at a time and perform a
+#### Algorithm
+
+1. So, we keep processing one character at a time and perform a
 certain calculation (or not)  depending upon what that character was.
 
-* Let's start off with the very simple case. Say we encountered the opening bracket i.e. `(` as the
+2. Let's start off with the very simple case. Say we encountered the opening bracket i.e. `(` as the
 character. Now, according to the question if we have certain value inside braces i.e. say `(X)`, then
 as part of the total score, this would contribute `2X`.
 
-* We need to mark this opening bracket in our stack so that we can perform the correct set of calculations. So,
+3. We need to mark this opening bracket in our stack so that we can perform the correct set of calculations. So,
 we simply push this opening bracket onto the stack and continue.
 
-* Now, the other possibility is that we encountered the closing bracket i.e. `)`.
+4. Now, the other possibility is that we encountered the closing bracket i.e. `)`.
 Handling this can be trickier than usual and we shall look at a few test cases for this.
+
 If you look at the code for this, you will find `[TEST-CASE-SAMPLE-1]` in the comments. This means
 a sample test case is provided here that would explain the code there.
 
@@ -51,11 +54,11 @@ a sample test case is provided here that would explain the code there.
   We will return sum(stack) = 6 now.
   ```
 
-* We could have simply returned the only value remaining in the stack. But that would only be
+We could have simply returned the only value remaining in the stack. But that would only be
 correct if we were sure that the stack will always have a single score in it when we finish
 processing all the brackets. That is not the case however.
 
-* Look at this second example test case.
+Look at this second example test case.
 
   ```
   ()()
