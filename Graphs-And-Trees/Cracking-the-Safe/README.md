@@ -51,6 +51,8 @@ by `S` and is of length `l`.
 ---
 ### Solution 1: Recursive Approach
 
+#### Algorithm
+
 1. The last password that the safe would have considered was `S[l-n:]` i.e. the last `n` characters.
 Now, we can enter one more digit from the range of possible digits that we have i.e. `0 .. k`. After entering this 
 digit, the new password that would be considered by the safe would be `S[(l+1) - n:]` since the new length of the sequence would be `l+1`. 
@@ -62,7 +64,7 @@ safe would consider `10` as the new password. At this point, both these options
 seem good enough. 
 
 3. But, we know that choosing a `1` here leads to the optimal solution and not a `0`.
-Because, choosing a `0` leads to the situation `0010` where we should not enter another `0` 
+Choosing a `0` leads to the situation `0010` where we should not enter another `0` 
 because we have already tried the password `00` in the very beginning. Also, entering a `1` would
 give us a redundant password in `01`. So, we have to enter 2 `1`s here to make the safe
 try the final remaining password of `11`. 
@@ -90,7 +92,8 @@ Hope you understood the problem statement and the approach as well. Look at the 
 
 #### Complexity Analysis
 
-* Time Complexity = `O(k^(k^n))` because the final sequence will have a length of `k^n` and each position has `k` possible digits to choose from. Note that since these are digits, the max value of `k` can be 9. 
+* Time Complexity = `O(K^(K^N))` because the final sequence will have a length of `K^N` and each position has `K` possible digits to choose from. Note that since these are digits, the max value of `K` can be 9. 
+* Space Complexity = `O(K^N)` since these are all the possible combinations that should be covered by the resultant string. That's the length of a single recursion and hence the space occupied by the recursion stack.
 
 #### Link to OJ
 
