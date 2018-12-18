@@ -24,7 +24,7 @@ We consider this as a graph problem G(V, E) where the vertices are the equations
 `Note:` we don't actually construct a graph. This is just the representation that is to be followed. We start from the numerator required in the query, say in the example we considered that was `a`. We look at all the children of `a` i.e. all the denominator choices for `a`. In the example we have `b`, `c` or `d`. We recurse on all 3 and in the next recursion, the choice we make becomes the numerator and then we look at its denominators and so on. Have a look at the following graph for better understanding.
 
 <p align="center">
-<img src="../../Images/Evaluate-Division-Recursion.png)" width="600">
+<img src="../../Images/Evaluate-Division-Recursion.png" width="600">
 </p>
 
 The path in yellow is what we are looking for. `a -> c -> m -> p -> e` means equations `(a / c) * (c / m) * (m / p) * (p / e)` giving us `a / e` finally. One variable being passed to the DFS is enough to get us the answer. Have a look at the pseudo-code for the search algorithm for this.
@@ -49,3 +49,10 @@ def dfs(d):
 all the alphabets we have seen. Let's call that set as A. So `V = |A|`. As for the edges, we can have edges between every pair of alphabets in the worst case i.e. every alphabet reachable from every other. In this case E = `O(V^2)`. So the time complexity is basically `O(A^2)`.
 
 * Space Complexity: `O(A)` since we use the visited set to maintain which vertices have been visited. The vertices are the alphabets.
+
+#### Link to OJ
+
+https://leetcode.com/problems/evaluate-division/
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal)
