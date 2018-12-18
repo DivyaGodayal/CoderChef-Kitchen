@@ -8,6 +8,11 @@ The only thing the Chef can do is to preprocess the array by swapping some pair 
 
 Note: The preprocessor above should ideally return the modified array for the binary search to work correctly. However, as the problem statement asks, we are just trying to determine the number of swaps needed for binary search to work correctly on the unsorted array given an input. The algorithm would also return a -1 if such a modification is not possible for the given array and element.
 
+---
+### Solution 1: Using Binary Search
+
+#### Motivation
+
 The idea here is very simple.
 
 We need to understand two basic steps. We call them the **TI-ME** steps. Perhaps that’ll help you remember what we are doing here.
@@ -29,6 +34,8 @@ We are searching for 8 in the above unsorted array. We already saw in the exampl
 The Mid elements give direction to binary search. Middle element 5 would make binary search go right. This way we would never find 8. If we swap 5 with an element greater than 8 we would force the search to go left.
 
 So, the whole idea here is that we swap all the middle elements which are wrongly placed.
+
+#### Algorithm
 
 The binary search algorithm (the value of the middle element with respect to the element to be searched, that is, X) can either take us towards the left half of the array or the right half. So, there are two possibilities for a wrongly placed middle element:
 
