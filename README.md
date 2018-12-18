@@ -62,7 +62,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
   <tr>
     <td>2</td>
     <td>Fake Binary Search</td>
-    <td>LeetCode</td>
+    <td>CodeChef</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Fake-Binary-Search">Link</a></td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
   <tr>
     <td>4</td>
     <td>Hand of Straights</td>
-    <td>CodeChef</td>
+    <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Hand-of-Straights">Link</a></td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
   <tr>
     <td>7</td>
     <td>Lemonade Change</td>
-    <td>CodeChef</td>
+    <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Lemonade-Change">Link</a></td>
   </tr>
   <tr>
