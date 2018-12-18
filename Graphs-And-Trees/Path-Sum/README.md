@@ -16,30 +16,30 @@ The `brute` way of approaching this problem would be to try all possible paths w
 
 * Time Complexity: `O(Nlog(N))`. Since this is a binary tree, so on an average the height of the tree considering there are N nodes in it would be `log(N)`. If we look at the implementation described above, we find that a given node can be visited multiple times. How many times we may ask ?
  
-Every node is visited during the recursion from each of its ancestors (including the parent). Nodes that are at the very top of the tree would have very few ancestral nodes and hence would only be repeated relatively fewer number of times as compared to the nodes at the bottom.
+ Every node is visited during the recursion from each of its ancestors (including the parent). Nodes that are at the very top of the tree would have very few ancestral nodes and hence would only be repeated relatively fewer number of times as compared to the nodes at the bottom.
 
-However, on an average, the depth of a node i.e. the distance of a given node from the root of the tree is `log(N)` and this is exactly the number of ancestral nodes it will have. 
+ However, on an average, the depth of a node i.e. the distance of a given node from the root of the tree is `log(N)` and this is exactly the number of ancestral nodes it will have. 
 
-So, we have `N` nodes and each of them gets processed `log(N)` number of times giving us the complexity of `O(Nlog(N))`
+ So, we have `N` nodes and each of them gets processed `log(N)` number of times giving us the complexity of `O(Nlog(N))`
 
 * Space Complexity: `O(logN)`, would be the recursion stack i.e. height of tree when its balanced.
 
-<p align="center">
-<img src="../../Images/Path-Sum-Diag1.png" width="500">
-</p>
+ <p align="center">
+ <img src="../../Images/Path-Sum-Diag1.png" width="500">
+ </p>
 
 ##### Worst Case
 
 * Time Complexity: `O(N^2)`. If the tree is a skewed tree then every node would be visited from all the nodes above it in the similar fashion as above but since the height of the tree is now N, the complexity is N * N. For a more strict complexity analysis, we will have a height of `N` for the last node in the tree, a height of `N - 1` for the second last node and so on till a height of `1` for the only child of our root node. So, the time complexity in this worst case scenario would be as follows. 
 
-```
-Worst time complexity 
-= 1 + 2 + 3 + .......+ N-1
-= O(N^2)
-```
-<p align="center">
-<img src="../../Images/Path-Sum-Diag2.png" width="500">
-</p>
+ ```
+ Worst time complexity 
+ = 1 + 2 + 3 + .......+ N-1
+ = O(N^2)
+ ```
+ <p align="center">
+ <img src="../../Images/Path-Sum-Diag2.png" width="500">
+ </p>
 
 * Space Complexity: `O(N)`, N is the height of the tree when it is skewed.
 
