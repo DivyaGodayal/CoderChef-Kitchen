@@ -38,9 +38,9 @@ So now you want to have a cup of green tea which would cost $5 and the tea vendo
 4. If you are able to provide the change from your current notes collection, you return True, otherwise False.
 
 5. Scenarios you might face:
-  1. The customer comes in with a `$5` note. In that case you just add it to your collection. `Five-Dollar-Notes + 1`
-  2. The customer comes in with a `$10` note. In that case you need to return $5 to the customer. You check if you have a $5 note, if you do, then you take it out from your collection and give it to the customer. Also add the $10 to your collection. `Five-Dollar-Notes - 1` and `Ten-Dollar-Notes + 1`
-  3. The customer comes in with a `$20` note. In that case you need to return $15 to the customer. Now you could either give back `one $10 and one $5` or `three $5`. If you are smart, you would first try the former option. Since you would want to reserve the $5 notes for later use. Also you don't add $20 to your change collections, Since you can't exchange it for any other transaction. So you either do (`Five-Dollar-Notes - 1` and `Ten-Dollar-Notes - 1`) or `Five-Dollar-Notes - 3`.
+    1. The customer comes in with a `$5` note. In that case you just add it to your collection. `Five-Dollar-Notes + 1`
+    2. The customer comes in with a `$10` note. In that case you need to return $5 to the customer. You check if you have a $5 note, if you do, then you take it out from your collection and give it to the customer. Also add the $10 to your collection. `Five-Dollar-Notes - 1` and `Ten-Dollar-Notes + 1`
+    3. The customer comes in with a `$20` note. In that case you need to return $15 to the customer. Now you could either give back `one $10 and one $5` or `three $5`. If you are smart, you would first try the former option. Since you would want to reserve the $5 notes for later use. Also you don't add $20 to your change collections, Since you can't exchange it for any other transaction. So you either do (`Five-Dollar-Notes - 1` and `Ten-Dollar-Notes - 1`) or `Five-Dollar-Notes - 3`.
 
 #### Complexity Analysis
 
