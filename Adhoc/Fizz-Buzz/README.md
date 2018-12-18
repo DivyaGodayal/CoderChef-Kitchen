@@ -5,13 +5,13 @@
 You must have played FizzBuzz as kids. FizzBuzz charm never gets old. And so here we are looking at how you can take on one step at a time and impress your interviewer with a better and neat approach to solve this problem.
 
 ---
-#### Approach 1: Naive Approach
+### Solution 1: Naive Approach
 
-**Intuition**
+#### Motivation
 
 The first approach is based on a simply divisibility check by `3`, `5` or both.
 
-**Algorithm**
+#### Algorithm
 
 1. Initialize an empty answer list.
 1. Iterate on the numbers from $$1 ... N$$.
@@ -21,15 +21,15 @@ The first approach is based on a simply divisibility check by `3`, `5` or both.
 5. Else, add the number.
 </pre>
 
-**Complexity Analysis**
+#### Complexity Analysis
 
-* **Time Complexity**: `O(N)`
-* **Space Complexity**: `O(1)`
+* Time Complexity: `O(N)`
+* Space Complexity: `O(1)`
 
 ---
-#### Approach 2: String Concatenation
+### Solution 2: String Concatenation
 
-**Intuition**
+#### Motivation
 
 This approach won't reduce the asymptotic complexity, but proves to be a neater solution when `FizzBuzz` comes with a twist.
 What if `FizzBuzz` is now `FizzBuzzJazz` i.e.
@@ -50,7 +50,7 @@ If you try to solve this with the previous approach the program would have too m
 
 This way if the `FizzBuzz` mappings increase, the conditions would grow exponentially in your program.  
 
-**Algorithm**
+#### Algorithm
 
 Instead of checking for every combination of these conditions, check for divisibility by given numbers i.e. 3, 5 as given in the problem. If the number is divisible, concatenate the corresponding string mapping `Fizz` or `Buzz` to the current answer string.
 
@@ -66,15 +66,15 @@ So for `FizzBuzz` we just check for two conditions instead of three conditions a
 Similarly, for `FizzBuzzJazz` now we would just have three conditions to check for divisibility.
 
 
-**Complexity Analysis**
+#### Complexity Analysis
 
-* **Time Complexity**: `O(N)`
-* **Space Complexity**: `O(1)`
+* Time Complexity: `O(N)`
+* Space Complexity: `O(1)`
 
 ---
-#### Approach 3: Hash it!
+### Solution 3: Hash it!
 
-**Intuition**
+#### Motivation
 
 This approach is an optimization over approach 2. When the number of mappings are limited, approach 2 looks good. But what if you face a tricky interviewer and he decides to add too many mappings?
 
@@ -84,7 +84,7 @@ What if tomorrow we have to change a mapping or may be delete a mapping? Are we 
 
 We don't have to. We can put all these mappings in a `Hash Table`.
 
-**Algorithm**
+#### Algorithm
 
 1. Put all the mappings in a hash table. The hash table `fizzBuzzHash` would look something like ``{ 3: 'Fizz', 5: 'Buzz' }``
 2. Iterate on the numbers from $$1 ... N$$.
@@ -96,7 +96,7 @@ We don't have to. We can put all these mappings in a `Hash Table`.
 
 So, for `FizzBuzzJazz` the hash table would look something like ``{ 3: 'Fizz', 5: 'Buzz', 7: 'Jazz' }``
 
-**Complexity Analysis**
+#### Complexity Analysis
 
 * Time Complexity : `O(N)`
 * Space Complexity : `O(1)`
