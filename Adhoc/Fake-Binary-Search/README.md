@@ -79,10 +79,10 @@ function can_preprocess(arr, X) {
 
     // Total smaller numbers available for swapping
     TSM = sorted_index[X] - correctly_placed_low
-    
+
     // Total Larger numbers available for swapping
     TLM = (N - sorted_index[X]) - correctly_placed_high
-    
+
     if count_low_needed > TSM or count_high_needed > TLM {
         return -1
     }
@@ -90,7 +90,7 @@ function can_preprocess(arr, X) {
 }
 ```
 
-**Note:** The problem statement fixes the input array for us and repeatedly passes values to be searched in the input array. So, we can iterate once over the original array to know the actual location of the element to be searched (create a dictionary, essentially).
+`Note:` The problem statement fixes the input array for us and repeatedly passes values to be searched in the input array. So, we can iterate once over the original array to know the actual location of the element to be searched (create a dictionary, essentially).
 
 Also, we need `sorted_index[X]` to tell us how many values are lesser than or greater than the element `X` in our array. We can sort the array and create another dictionary storing location of each element in the sorted array.
 
@@ -116,5 +116,14 @@ Let’s go through the steps of the proposed algorithm while dry running an exam
 
 4. The total number of swaps needed for binary search to return the correct index here would be two swaps with elements lower than 4. We have smaller numbers `1, 3 or 2` for swapping available, so we can successfully do the swapping for this array so that binary search correctly finds out `4` .
 
-* **Time Complexity**: `O(NlogN)` since we had to sort the elements to get a list of all the numbers less than the given number `X`.
-* **Space Complexity**: `O(N)` since we create a dictionary of elements to indices in the sorted array.
+#### Complexity Analysis
+
+* Time Complexity: `O(NlogN)` since we had to sort the elements to get a list of all the numbers less than the given number `X`.
+* Space Complexity: `O(N)` since we create a dictionary of elements to indices in the sorted array.
+
+#### Link to OJ
+
+https://www.codechef.com/MAY18A/problems/FAKEBS
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal).

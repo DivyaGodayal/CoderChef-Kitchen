@@ -87,3 +87,10 @@ Let us try and dry run the stack based algorithm on the following example. As a 
 ```
 next_largest = [3, 1, 1, 0, 0]
 ```
+
+#### Link to OJ
+
+https://leetcode.com/problems/daily-temperatures/
+
+---
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal).
