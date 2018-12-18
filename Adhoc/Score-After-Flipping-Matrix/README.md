@@ -58,8 +58,3 @@ https://leetcode.com/articles/score-after-flipping-matrix/
 ---
 Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal)
 
-* **Time complexity** = `O(MN)` where the matrix has M rows and N columns. 
-
-
-
-
