@@ -9,7 +9,7 @@ This is probably the easiest problem from the `N-Sum` family. The problem statem
 
 #### Motivation
 
-The first approach derives it's motivation from the question statement it self. Simply try all possible pairs of numbers and check which one adds to give the target.
+The first approach derives it's motivation from the question statement itself. Simply try all possible pairs of numbers and check which one adds to give the target.
 
 #### Algorithm
 
