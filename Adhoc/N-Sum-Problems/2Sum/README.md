@@ -2,7 +2,7 @@
 <img src="../../../Images/2Sum/main.png" width="600">
 </p>
 
-This is probably the easiest problem from the `N-Sum` family. The problem statement simply asks us to return the indices of a pair of numbers that add up to give the target sum provided in the question. There are multiple approaches to solve this problem. We will start with the most brute and straightforward way of solving it and then move onto other optimal approaches.
+This is probably the easiest problem from the [N-Sum](../README.md) family. The problem statement simply asks us to return the indices of a pair of numbers that add up to give the target sum provided in the question. There are multiple approaches to solve this problem. We will start with the most brute and straightforward way of solving it and then move onto other optimal approaches.
 
 ---
 ### Solution 1: Brute Force

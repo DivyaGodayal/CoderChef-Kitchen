@@ -2,7 +2,7 @@
 <img src="../../../Images/4Sum/main.png" width="600">
 </p>
 
-This problem builds upon the classical 2Sum problem. However, in the 2Sum problem, we are asked to find a single pair of numbers that add up to a given target. In this problem we are to find *all* quadruples that add up to the given target. We only need to report *unique* quadruples.
+This problem belongs to the family of [N-Sum](../README.md) problems and builds upon the classical 2Sum problem. However, in the 2Sum problem, we are asked to find a single pair of numbers that add up to a given target. In this problem we are to find *all* quadruples that add up to the given target. We only need to report *unique* quadruples.
 
 ---
 ### Solution 1: Brute Force (TLE)
