@@ -55,7 +55,7 @@ As mentioned before, this problem is an extension of the classical 2Sum problem.
 3. Have an external loop, `i` over all the elements in `nums`.
 4. Have a second, nested loop, `j`, from `i + 1` onwards till the end of `nums`.
 5. This leads to fixing the first two numbers, say `a` and `b` for the quadruple. All that remains is to find the two numbers, say `c` and `d` that sum up to `target - a - b`.
-6. This becomes a 2Sum problem. We simply find *all* pair of numbers in `j + 1 -- N` that add to `target - a - b`.
+6. This becomes a 2Sum problem. We simply find *all* pair of numbers in `[j+1, N - 1]` that add to `target - a - b`.
 7. For each pair returned from the above point, form quadruples `[a, b, c, d]` and add to `S`. We use a set (we can use a dictionary as well) here to filter out unique quadruples only.
 
 #### Complexity Analysis
