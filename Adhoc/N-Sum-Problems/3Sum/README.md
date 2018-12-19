@@ -15,7 +15,7 @@ Use three loops to from all the triplets possible from the given array of number
 
 Below is the code snippet for this appraoch:
 
-<!-- ```python
+```python
 class Solution(object):
   def threeSum(self, nums):
       """
@@ -34,7 +34,7 @@ class Solution(object):
                       if tuple_ not in ans_dict:
                           ans_dict[tuple_] = True
       return ans_dict.keys()
-``` -->
+```
 
 #### Complexity Analysis
 
@@ -76,7 +76,9 @@ For eg. A list of may be 50 zeros would be reduced to just [0, 0, 0]
 * Time Complexity : `O(N^2)`, For finding 2Sum.
 * Space Complexity : `O(N)`, where N is the size of the number list.
 
+#### Link to OJ
+
+https://leetcode.com/problems/3sum/
+
 ---
-Originally published in [@LeetCode](https://leetcode.com/problems/3sum/).
-<br>
-Analysis written by: [@godayaldivya](https://leetcode.com/godayaldivya/).
+Article contributed by [Sachin](https://github.com/edorado93) and [Divya](https://github.com/DivyaGodayal).
