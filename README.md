@@ -151,6 +151,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
   </tr>
   <tr>
     <td>17</td>
+    <td>3 Sum</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/N-Sum-Problems/3Sum">Link</a></td>
+  </tr>
+  <tr>
+    <td>17</td>
     <td>4 Sum</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/N-Sum-Problems/4Sum">Link</a></td>
