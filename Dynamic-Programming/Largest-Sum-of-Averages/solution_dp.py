@@ -1,15 +1,20 @@
 class Solution(object):
     def largestSumOfAverages(self, A, K):
-        P = [0]
-        for x in A: P.append(P[-1] + x)
+        cumulative = [0]
+        for a in A: cumulative.append(cumulative[-1] + a)
         def average(i, j):
-            return (P[j] - P[i]) / float(j - i)
+            return (cumulative[j] - cumulative[i]) / (j - i)
 
         N = len(A)
-        dp = [average(i, N) for i in xrange(N)]
-        for k in xrange(K-1):
-            for i in xrange(N):
-                for j in xrange(i+1, N):
+
+        # Default values account for K = 0
+        dp = [average(i, N) for i in range(N)]
+
+        # Since we already have answers for K = 0, we go from
+        # 1 to K - 1
+        for k in range(1, K):
+            for i in range(N):
+                for j in range(i+1, N):
                     dp[i] = max(dp[i], average(i, j) + dp[j])
 
         return dp[0]
