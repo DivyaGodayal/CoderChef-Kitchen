@@ -16,6 +16,7 @@ B = [1, 2, 3, 4]
 ```
 
 `Possible Pairing - Advantage - 2`
+
  A | B
 ---|---
 `4`|`1`
@@ -26,6 +27,7 @@ B = [1, 2, 3, 4]
 In the above example, if we pair up A's `4` and B's `1`, we have lost the chance of pairing up B's `1` with a better candidate, which might be smaller number than `4` and hence 4 could be utilized some where else.
 
 `Better Pairing - Advantage - 3`
+
  A | B
 ---|---
 `2`|`1`
