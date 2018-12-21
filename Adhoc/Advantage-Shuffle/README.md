@@ -16,22 +16,22 @@ B = [1, 2, 3, 4]
 ```
 
 `Possible Pairing - Advantage - 2`
-|A|B|
-|---|---|
-|`4`|`1`|
-|`3`|`2`|
-|1|3|
-|2|4|
+ A | B
+---|---
+`4`|`1`
+`3`|`2`
+ 1 | 3
+ 2 | 4
 
 In the above example, if we pair up A's `4` and B's `1`, we have lost the chance of pairing up B's `1` with a better candidate, which might be smaller number than `4` and hence 4 could be utilized some where else.
 
 `Better Pairing - Advantage - 3`
-|A|B|
-|---|---|
-|`2`|`1`|
-|`3`|`2`|
-|`4`|`3`|
-|1|4|
+ A | B
+---|---
+`2`|`1`
+`3`|`2`
+`4`|`3`
+1  |4
 
 As seen in the above example if we paired the lowest A's with lowest B's initially, we would have more pairs. The basic intuition for this problem is to be greedy.
 
@@ -41,14 +41,28 @@ Here by greedy we mean start with the smallest values in A and start pairing wit
 
 #### Algorithm
 
-1. Sort A in increasing order of value.
-2. Reform the list B to also store the original indices of each element. This index is to be used later on, to place the shuffled array A element corresponding to the correct B element.
-3. Now sort the array B on the basis of value, in increasing order.
+1. Sort `A` in increasing order of value.
+2. Reform the list `B` to also store the original indices of each element. This index is to be used later on, to place the `shuffled array A` element corresponding to the correct `B`'s element.
+3. Now sort the array `B` on the basis of value, in increasing order.
+
+<p align="center">
+<img src="../../Images/AdvantageShuffle/Algorithm1.png" width="600">
+</p>
+
 4. Take a new array `shuffled_A` to be returned.
 5. Iterate both the sorted arrays using index pointers say, i and j.
-6. If at any point element in `A` is greater than element in `B` then this pair is useful in increasing the advantage. Place it in the shuffled array at the correct spot using the corresponding index value from array B.
-7. Else, The element in A is added to a list of remaining elements, to be used later.
-8. After we are done with finding all the advantage elements in A and placing them in the correct spot in shuffled_A. We can put all the remaining non advantage elements of A in the empty spots of shuffled_A. Since, the elements in these empty spots do not count towards the advantage, hence their placement doesn't matter.
+6. If at any point element in `A` is greater than element in `B` then this pair is useful in increasing the advantage. Place it in the shuffled array at the correct spot using the corresponding index value from array `B`.
+7. Else, The element in `A` is added to a list of remaining elements, to be used later.
+
+<p align="center">
+<img src="../../Images/AdvantageShuffle/Algorithm2.png" width="600">
+</p>
+
+8. After we are done with finding all the advantage elements in `A` and placing them in the correct spot in `shuffled_A`. We can put all the remaining non advantage elements of A in the empty spots of `shuffled_A`. Since, the elements in these empty spots do not count towards the advantage, hence their placement doesn't matter.
+
+<p align="center">
+<img src="../../Images/AdvantageShuffle/Algorithm3.png" width="600">
+</p>
 
 #### Complexity Analysis
 
