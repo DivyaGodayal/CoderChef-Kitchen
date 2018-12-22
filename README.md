@@ -291,6 +291,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/DeepCopy-LinkedList">Link</a></td>
   </tr>
   <tr>
+    <td>2</td>
+    <td>Remove N<sup>th</sup> Node from End of List</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Remove-N-From-End">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Strings</h3></th>
   </tr>
   <tr>
