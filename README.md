@@ -156,10 +156,16 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/N-Sum-Problems/3Sum">Link</a></td>
   </tr>
   <tr>
-    <td>17</td>
+    <td>18</td>
     <td>4 Sum</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/N-Sum-Problems/4Sum">Link</a></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Advantage Shuffle</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Advantage-Shuffle">Link</a></td>
   </tr>
   <tr>
     <th colspan="4"><h3>Dynamic Programming</h3></th>
