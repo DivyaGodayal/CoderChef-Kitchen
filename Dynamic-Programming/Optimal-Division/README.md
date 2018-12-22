@@ -35,7 +35,7 @@ Given an array defined by `(start, end)`, we need to essentially find the *split
 
 As mentioned before, the numerator and denominator sub-expressions are recursive in nature and hence, we will make two different recursive calls to solve these two *subproblems*. As can be seen from the problem formulation, a subproblem is defined by the two indices `start, end`.
 
-Our recursive function will return the result of *optimally* solving a given expression. So, for a given subproblem defined by `start, end` and a given split index, `start <= i <= end`, we will get two expression results, one from `start, i` and another one from `i + 1, end`. Let's call these results `N` and `D` respectively.
+Our recursive function will return the result of *optimally* solving a given expression. So, for a given subproblem defined by `start, end` and a given split index, `start <= i <= end`, we will get two expression results, one from `[start, i]` and another one from `[i + 1, end]`. Let's call these results `N` and `D` respectively.
 
 The overall expression value would be `N / D` and our job is to select a split index such that the value of `N / D` is maximized, right?
 
