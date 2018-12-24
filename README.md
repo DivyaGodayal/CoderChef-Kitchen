@@ -168,6 +168,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Advantage-Shuffle">Link</a></td>
   </tr>
   <tr>
+    <td>20</td>
+    <td>Next Greater Element I</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Next-Greater-Element-I">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Dynamic Programming</h3></th>
   </tr>
   <tr>
@@ -295,6 +301,18 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td>Remove N<sup>th</sup> Node from End of List</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Remove-N-From-End">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Remove Duplicates from Sorted List I</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Remove-Dups-from-Sorted-List">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Remove Duplicates from Sorted List II</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Remove-Dups-from-Sorted-List-II">Link</a></td>
   </tr>
   <tr>
     <th colspan="4"><h3>Strings</h3></th>
