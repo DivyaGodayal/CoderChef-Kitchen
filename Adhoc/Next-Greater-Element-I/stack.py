@@ -17,7 +17,7 @@ class Solution(object):
         # Starting the last index iterate the nums array
         while right >= 0:
             # For every element, compare with the stack top and keeping popping
-            # stacks top element till the stack top has a lesser element than the current element.
+            # stacks top element while the stack top has a lesser element than the current element.
             # This is because the current value is a higher value. If we look from the left of this
             # We already have a higher number, so all the smaller numbers at the stack top could be removed.
             while stack and nums[right] > stack[-1]:
@@ -35,6 +35,3 @@ class Solution(object):
             ans.append(find_nums_dict[findNum])
 
         return ans
-
-
-            
