@@ -18,7 +18,7 @@ The intuition for this problem is very simple. Consider a set of numbers, `[1,4,
       ```
       prev_ptr.next = ptr.next
       ```
-4. We keep on iterating till the end of the list and keep on deleting the duplicates this way. Of-course, the `prev_ptr` has to be moved along with the `ptr` node. it always has to be one step behind the `ptr` node for us to be able to perform deletions in `O(1)` time.
+4. We keep on iterating till the end of the list and keep on deleting the duplicates this way. Of-course, the `prev_ptr` has to be moved along with the `ptr` node. It always has to be one step behind the `ptr` node for us to be able to perform deletions in `O(1)` time.
 
 #### Complexity Analysis
 
