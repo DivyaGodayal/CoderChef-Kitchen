@@ -174,7 +174,7 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Next-Greater-Element-I">Link</a></td>
   </tr>
   <tr>
-    <td>20</td>
+    <td>21</td>
     <td>Next Greater Element II</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Next-Greater-Element-II">Link</a></td>

@@ -8,7 +8,7 @@ class Solution(object):
         # The next greater list to be returned
         next_greater_list = []
 
-        # Since circular search is allowed, we double up the array.
+        # Since circular search is given, we double up the array.
         doubledNums = nums + nums
 
         # For each element in nums array
