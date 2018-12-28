@@ -39,6 +39,10 @@ An important thing to note here is that the question simply cares about common c
 
 What we can do here is to have a bitmask consisting of 26 bits to represents the characters belonging to a particular word. Let’s look at such a representation for a few words to make things clearer.
 
+<p align="center">
+<img src="../../Images/Maximum-Product-of-Word-Lengths/diag-1.png" width="600">
+</p>
+
 If two words would have any common characters, then the corresponding bits for those characters would be set in the bitmasks for both the words. Hence, all we have to do is to do a bitwise AND of the bitmasks representing two words and check if we get a 0 or not
 
 #### Algorithm
