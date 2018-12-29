@@ -23,7 +23,7 @@ The brute force way is to check all the pairs of words and for each pair, check 
 
 #### Complexity Analysis
 
-* Time Complexity: `O(26 . N²) = O(N²)`
+* Time Complexity: `O(26 . N²) = O(N²)`. The set intersection is performed for every pair of words. Each set simply consist of the characters that the word is made of. So, the maximum size of such a set can be 26 (considering that's the size of the alphabet in our question). Hence, the constant 26 in the complexity mentioned above. But, since it's a constant, we ignore it in our analysis.
 * Space Complexity: `O(N)` for the preprocessed map.
 
 ---
