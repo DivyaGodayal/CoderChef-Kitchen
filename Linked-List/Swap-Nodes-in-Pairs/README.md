@@ -19,13 +19,13 @@ While back tracking the nodes are swapped.
 <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_2.png" width="500">
 </p>
 
-This means every recursion call breaks the list at the second node and forwards the remaining list in next recursion.
-
-Let's say every time we get into a recursion call, `head` points to the `head` of the remaining list or the head of the next pair.
+> This means every recursion call breaks the list at the second node and forwards the remaining list in next recursion.
 
 #### Algorithm
 
-1. The base condition for recursion is to check if either of  `head` or `head.next` is pointing to a null. This would mean we don't have a pair of element to swap for the current recursion call.
+Let's say every time we get into a recursion call, `head` points to the head of the remaining list or the first node of the next pair.
+
+1. The base condition for recursion is to check if either of  `head` or `head.next` is pointing to a null. This would mean we don't have a pair of elements to swap for the current recursion call.
 2. Let's represent the two nodes to be swapped by `firstNode` and `secondNode`.
     ```
     firstNode = head
@@ -47,12 +47,12 @@ Let's say every time we get into a recursion call, `head` points to the `head` o
     <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_5.png" width="500">
     </p>
 
-    Once we get the pointer to the remaining swapped list from the recursion call. We can swap the first and second node of the current call and return the pointer to the second node since it will be the new head after swapping.
+    Once we get the pointer to the remaining swapped list from the recursion call, we can swap the `firstNode` and `secondNode` i.e. the nodes in the current recursive call and return the pointer to the `secondNode` since it will be the new head after swapping.
 
     <p align="center">
     <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_6.png" width="500">
 
-  4. Once all the pairs are swapped in the backtracking step, we would eventually be returning the pointer to the swapped original list.
+  4. Once all the pairs are swapped in the backtracking step, we would eventually be returning the pointer to the head swapped original list. This head will essentially be the second node in the original linked list.
 
       <p align="center">
       <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_7.png" width="500">
@@ -69,7 +69,7 @@ Let's say every time we get into a recursion call, `head` points to the `head` o
 
 #### Motivation
 
-The concept is similar to recursive. We break the linked list into pairs by jumping in steps of two. The only difference is, when two nodes are swapped, the head of the pair is now at the second node of the pair. This should be assigned to the next pointer of the previous node. So we save the previous node in a variable `prevNode`.
+The concept is similar to the recursive approach. We break the linked list into pairs by jumping in steps of two. The only difference is, instead of repeatedly swapping nodes fro the end, like what we achieved using recursion, we do the same thing from the beginning. After swapping a pair of nodes, say `A` and `B`, we need to link the node `B` to the node that came before `A` to maintain the required links. So we save the previous node in a variable `prevNode`.
 
 <p align="center">
 <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_8.png" width="500">
@@ -94,7 +94,7 @@ The concept is similar to recursive. We break the linked list into pairs by jump
     <p align="center">
     <img src="../../Images/Swap-Nodes-in-Pairs/algorithm_11.png" width="500">
 
-4. We also need to assign the prevNode's next to the current head of the swapped pair.
+4. We also need to assign the prevNode's next to the head of the swapped pair.
     ```
     prevNode.next = secondNode
     ```
