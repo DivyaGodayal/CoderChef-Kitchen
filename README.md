@@ -180,6 +180,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Next-Greater-Element-II">Link</a></td>
   </tr>
   <tr>
+    <td>22</td>
+    <td>Maximum Product of Word Lengths</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Maximum-Product-of-Word-Lengths">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Dynamic Programming</h3></th>
   </tr>
   <tr>
