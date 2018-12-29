@@ -28,11 +28,11 @@ Let's look at an animation for this algorithm on a sample array.
 * Space Complexity: `O(N)`. We need to improve on this. The question asks us to come up with a constant time solution.
 
 ---
-### Solution 1: Merge Sort
+### Solution 2: Merge Sort
 
 #### Motivation
 
-The actual solution for this problem is requires us to sort the given linked list without actually using any additional space. A lot of sorting algorithms that sort a given array in `O(NlogN)` time tend to make use of `indexes` in the array. However, we know that a linked list doesn't have any indexes as such. The only algorithm that doesn't really requires any indices is `Merge Sort`.
+The actual solution for this problem is requires us to sort the given linked list without actually using any additional space. A lot of sorting algorithms that sort a given array in `O(NlogN)` time, tend to make use of `indexes` in the array. However, we know that a linked list doesn't have any indexes as such. The only algorithm that doesn't really requires any indices is `Merge Sort`.
 
 #### Algorithm
 
