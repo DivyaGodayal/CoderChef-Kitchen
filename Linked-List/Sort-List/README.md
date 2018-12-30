@@ -16,11 +16,33 @@ This isn't really the kind of solution the problem statement wants. But it's one
 3. Sort the array, `A`.
 4. Iterate over the elements (now sorted) in `A` and change the values of nodes in the linked list (the original one) according to values in the sorted array.
 
-Let's look at an animation for this algorithm on a sample array.
+```
+* Let's consider a linked list as follows:
 
-<p align="center">
-<img src="../../Images/Sort-List/array.gif" width="600">
-</p>
+4 -->> 1 -->> 2 -->> 3
+
+* Now, we initialize an array and add all the elements of the list to this array.
+
+[4, 1, 2, 3]
+
+* We sort this array and get [1, 2, 3, 4]
+* The final step is to iterate over this array and the linked list in parallel (i.e. one node and one index at a time) and copy data over from the array.
+
+4 -->> 1 -->> 2 -->> 3
+[1, 2, 3, 4] index = 0
+
+1 -->> 1 -->> 2 -->> 3
+[1, 2, 3, 4] index = 1
+
+1 -->> 2 -->> 2 -->> 3
+[1, 2, 3, 4] index = 2
+
+1 -->> 2 -->> 3 -->> 3
+[1, 2, 3, 4] index = 3
+
+1 -->> 2 -->> 3 -->> 4
+[1, 2, 3, 4] index = 4 (DONE)
+```
 
 #### Complexity Analysis
 
