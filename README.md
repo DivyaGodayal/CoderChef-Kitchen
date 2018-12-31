@@ -300,6 +300,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Word-Search">Link</a></td>
   </tr>
   <tr>
+    <td>12</td>
+    <td>Word Search</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Number-of-Islands">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Linked-List</h3></th>
   </tr>
   <tr>
