@@ -30,6 +30,12 @@ Now that we know how to model the given matrix as a graph, let's get to actually
 5. In the dfs function, for a given cell, `(i, j)`, we mark it as visited and then we recursively call the dfs function on all 4 of it's neighbors i.e. `(i + 1, j)`, `(i - 1, j)`, `(i, j + 1)`, and `(i, j - 1)`.
 6. We simply count the number of calls to the dfs function and that count is the total number of connected components in our undirected, unweighted graph.
 
+Let's have a look at an animation representing this algorithm. It's the same for the next algorithm as well. The only difference is in the graph search strategy used (DFS v/s BFS).
+
+<p align="center">
+<img src="../../Images/Number-of-Islands/dfs.gif" width="600">
+</p>
+
 #### Implementation Notes
 
 We need some way of tracking which nodes have already been processed and which ones aren't. There are two ways of doing this. One, we can use the grid itself, like it's mentioned in the algorithm and simply put a `-1` in the cells which have been processed. This doesn't add to the space complexity at all but it changes the underlying data structure.
