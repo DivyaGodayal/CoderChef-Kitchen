@@ -333,6 +333,12 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Sort-List">Link</a></td>
   </tr>
   <tr>
+    <td>6</td>
+    <td>Swap Nodes in Pairs</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Swap-Nodes-in-Pairs">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Strings</h3></th>
   </tr>
   <tr>
