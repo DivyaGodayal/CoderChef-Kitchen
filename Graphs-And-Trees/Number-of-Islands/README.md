@@ -25,16 +25,16 @@ Now that we know how to model the given matrix as a graph, let's get to actually
 2. Have another loop, called `j` over the columns, `C` of the matrix.
 3. For each given cell, we check two conditions:
     1. If the value stored at that particular cell is a `1` and
-    2. If that cell has been processed previously or not. We use the value of the cell itself to check if the it was visited in another node's (cell's) dfs or not. If the value is `-1`, then it means the cell has already been processed and we continue to the next cell.
+    2. If that cell has not been processed previously. We use the value of the cell itself to check if the it was visited in another node's (cell's) dfs or not. If the value is `-1`, then it means the cell has already been processed and we continue to the next cell.
 4. If both the conditions are satisfied, this implies the start of a new connected component and we recursively process all the nodes reachable from the current node using DFS. By process we simply mean mark all the reachable nodes in the matrix as `-1`.
-5. In the dfs function, for a given cell, `i, j`, we mark it as visited and then we recursively call the dfs function on all 4 of it's neighbors i.e. `i + 1, j`, `i - 1, j`, `i, j + 1`, and `i, j - 1`.
-6. We simply count everytime we has to call the dfs function and that count is the total number of connected components in our undirected, unweighted graph.
+5. In the dfs function, for a given cell, `(i, j)`, we mark it as visited and then we recursively call the dfs function on all 4 of it's neighbors i.e. `(i + 1, j)`, `(i - 1, j)`, `(i, j + 1)`, and `(i, j - 1)`.
+6. We simply count the number of calls to the dfs function and that count is the total number of connected components in our undirected, unweighted graph.
 
 #### Implementation Notes
 
 We need some way of tracking which nodes have already been processed and which ones aren't. There are two ways of doing this. One, we can use the grid itself, like it's mentioned in the algorithm and simply put a `-1` in the cells which have been processed. This doesn't add to the space complexity at all but it changes the underlying data structure.
 
-An alternative might be to make use of a `visited` set. We can simply add tuples of cell indices which have been processed and use it in the algorithm. This, however, will add to the space complexity. It doesn't increase it asymptotically. But, it is additional space which is not really required unless you cannot change the input matrix.
+An alternative might be to make use of a `visited` set. We can simply add tuples of cell indices which have been processed and use it in the algorithm. This, however, will need `O(M * N)` space. But, it is additional space which is not really required unless you cannot change the input matrix.
 
 #### Complexity Analysis
 
@@ -55,7 +55,7 @@ The motivation is the same as above. Except that now, instead of making use of t
 3. Have another loop, called `j` over the columns, `C` of the matrix.
 4. For each given cell, we check two conditions:
     1. If the value stored at that particular cell is a `1` and
-    2. If that cell has been processed previously or not. We use the value of the cell itself to check if the it was visited in another node's (cell's) bfs or not. If the value is `-1`, then it means the cell has already been processed and we continue to the next cell.
+    2. If that cell has not been processed previously. We use the value of the cell itself to check if the it was visited in another node's (cell's) bfs or not. If the value is `-1`, then it means the cell has already been processed and we continue to the next cell.
 5. For each cell that we call the bfs function on, we add it to the queue, `Q` and then process all the nodes reachable from it (at all the levels). The advantage here is in the space occupied by the queue. There's no recursion here unlike in dfs and hence, there's lower space usage.
 6. For a node popped from the queue, we add all valid neighbors from amongst the 4 possible as explained in the previous algorithm.
 7. The number of calls to the bfs function are the number of connected components that we need to report.
