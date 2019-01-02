@@ -8,14 +8,14 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
 
 ## How to Contribute ?
 
-When an newbie starts off with their programming journey, they usually come across algorithms like Linear Search, Bubble Sort, Insertion Sort and much more. There are a *bajillion* resources out there for such introductory algorithms.
+When people start off with their programming journey, they usually come across algorithms like Linear Search, Bubble Sort, Insertion Sort and much more. There are a *bazillion* resources out there for such introductory algorithms.
 
 Our aim with Code**r**Chef Kitchen (Don't miss that 'r' 😅) is not to add articles just for the sake of it. Our main intention is to add articles that bring across some important programming concepts or some new algorithmic techniques or some interesting implementation ideas that we don't generally find online.
 
-In addition to this, we want to make programming fun for people out there. We want to break away from the common notion of *"tech articles are boring and serious"*. They can be pretty fun and addictive to read if projected in a certain way.
+In addition to this, we want to make programming fun for people out there. We want to break away from the common notion of *"tech articles are boring and serious"*. They can be pretty fun and addictive to read, if projected in a certain way.
 
 <p align="center">
-<img src="Images/pikachu.gif" width="600">
+<img src="Images/snoopy-readme.gif" width="600">
 </p>
 
 There are multiple ways in which you can contribute. There are no "prerequisites" as such for you to become a contributor. Essentially, you can do either of the following:
@@ -36,41 +36,46 @@ There are multiple ways in which you can contribute. There are no "prerequisites
 
 ### Contribution Guideline
 
-1. Clone the repo using the command
+1. The first thing you should do is, convey to us what you want to contribute. To make it a very streamlined process, we want you to create an **issue** in the repository, describing the problem you want to pick. Also, in 1-2 lines explain why you think this problem should be added to the repo.
+
+    *Kindly note this step is only to be sure that we are not wasting any of your efforts. Once we give our approval to the issue created, you can go ahead with article. This still doesn't guarantee that your article would be accepted. Our only suggestion is stick to the template and be creative. We are there to help and learn in the process.*
+
+2. Clone the repo using the command
     ```
     git clone https://github.com/DivyaGodayal/CoderChef-Kitchen.git
     ```
-2. For every problem, we want you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
+3. For every **new** problem, we want you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
 
     ```
     mkdir Dynamic-Programming/<Problem Name>
     ```
 
-3. The newly created folder must contain a `README.md` file and `solution.py` file. If there are multiple solutions, you can name the solutions accordingly. e.g. `solution_min_heap.py` or `solution_recursive.py`.
+4. The newly created folder must contain a `README.md` file and `solution.py` file. If there are multiple solutions, you can name the solutions accordingly. e.g. `solution_min_heap.py` or `solution_recursive.py`.
 
     ```
     touch README.md
     touch solution.py
     ```
-4. For writing the README.md file, follow the template provided [here](Template/README.md).
-5. Ideally, every approach to a programming problem should have the following sections:
+5. For writing the README.md file, follow the template provided [here](Template/README.md).
+6. Ideally, every approach to a programming problem should have the following sections:
       1. Motivation.
       2. Algorithm.
       3. Implementation Details. (Optional)
       4. Complexity Analysis.
-6. Once you are done writing the article and the solutions, remember to add the problem to the table on the main README page. (Look at the table of contents below).  
-7. Once all your changes are done, create a local commit.
+7. Once you are done writing the article and the solutions, remember to add the problem to the table on the main README page. (Look at the table of contents below).  
+8. Once all your changes are done, create a local commit.
 
     ```
     git add .
     git commit -am "Added article and solution for <Problem-Name>"
     ```
-8. Push your changes to a separate branch for the problem. This new branch should be deleted once the PR is merged.
+9. Push your changes to a separate branch for the problem. This new branch should be deleted once the PR is merged.
 
     ```
     git push origin master:<branch_name>
     ```
-9. Raise a Pull Request. This step is very important. For any changes you want to make to the repository, you have to raise a pull request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
+10. Raise a Pull Request. This step is very important. For any changes you want to make to the repository, you have to raise a pull request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
+11. Any doubt in the above steps, reach out to us. :)
 
 <table>
   <tr>
