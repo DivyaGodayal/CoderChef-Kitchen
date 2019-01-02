@@ -36,15 +36,15 @@ There are multiple ways in which you can contribute. There are no "prerequisites
 
 ### Contribution Guideline
 
-1. The first thing you should do is, convey to us what you want to contribute. To make it a very streamlined process, we want you to create an **issue** in the repository, describing the problem you want to pick. Also, in 1-2 lines explain why you think this problem should be added to the repo.
+1. The first thing you should do is, convey what you want to contribute. To make it a very streamlined process, create an **issue** in the repository describing the problem you want to pick. Also, in 1-2 lines explain why you think this problem should be added to the repo.
 
-    *Kindly note this step is only to be sure that we are not wasting any of your efforts. Once we give our approval to the issue created, you can go ahead with article. This still doesn't guarantee that your article would be accepted. Our only suggestion is stick to the template and be creative. We are there to help and learn in the process.*
+    **Kindly note** this step is only to be sure that your efforts won't go to waste. Once the issue is approved, you can go ahead with article. This still doesn't guarantee that your article would be accepted on the first go. Our only suggestion is stick to the template (read below) and be as creative as possible. We are always there to help and learn in the process.
 
 2. Clone the repo using the command
     ```
     git clone https://github.com/DivyaGodayal/CoderChef-Kitchen.git
     ```
-3. For every **new** problem, we want you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
+3. For every **new** problem, create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, create a folder for the problem under the Dynamic Programming folder.
 
     ```
     mkdir Dynamic-Programming/<Problem Name>
@@ -75,7 +75,7 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     git push origin master:<branch_name>
     ```
 10. Raise a Pull Request. This step is very important. For any changes you want to make to the repository, you have to raise a pull request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
-11. Any doubt in the above steps, reach out to us. :)
+11. In case of any doubt in the above steps, reach out to us. :)
 
 <table>
   <tr>
