@@ -6,13 +6,41 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
 * :tada: Each problem has an intuition section, followed by the algorithm and the pseudo-code, and finally the implementation. Additionally, the problems are embellished with explanatory images and animations to provide clarity of thought.
 * :pencil2: For now, we only add solutions in Python for the questions. Contributions are always welcome for solutions in other programming languages.
 
+## How to Contribute ?
+
+When an newbie starts off with their programming journey, they usually come across algorithms like Linear Search, Bubble Sort, Insertion Sort and much more. There are a *bajillion* resources out there for such introductory algorithms.
+
+Our aim with Code**r**Chef Kitchen (Don't miss that 'r' 😅) is not to add articles just for the sake of it. Our main intention is to add articles that bring across some important programming concepts or some new algorithmic techniques or some interesting implementation ideas that we don't generally find online.
+
+In addition to this, we want to make programming fun for people out there. We want to break away from the common notion of *"tech articles are boring and serious"*. They can be pretty fun and addictive to read if projected in a certain way.
+
+<p align="center">
+<img src="Images/pikachu.gif" width="600">
+</p>
+
+There are multiple ways in which you can contribute. There are no "prerequisites" as such for you to become a contributor. Essentially, you can do either of the following:
+
+1. Pick up one of the existing problems from the repository and add a solution in a language not already present in the repo. For e.g. a lot of problems currently only have solutions in Python. It would be great to have solutions in other common languages like Java or C/C++.
+
+    An important thing to consider here is that the solution you provide must be ***in line*** with the algorithm(s) already explained in the article. In case you are writing a new algorithm which has not been explained already, then make sure to add relevant explanation to the article as well.
+
+2. The second way for you to contribute is by picking a problem which is not already there in the repository and contribute solution(s) and an article for it.
+
+    > A picture is worth a thousand words
+
+    That is our motto. The articles that we write tend to be full of illustrations in the form of explanatory diagrams and gifs/videos/animations. Anything that helps explain the algorithm better. We would love future articles to be along the same lines as well. For a detailed set of guidelines for contributing a new article, read the instructions below.
+
+    <p align="center">
+    <img src="Images/motto.gif" width="600">
+    </p>
+
 ### Contribution Guideline
 
 1. Clone the repo using the command
     ```
     git clone https://github.com/DivyaGodayal/CoderChef-Kitchen.git
     ```
-2. For every problem, we expect you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
+2. For every problem, we want you to create a separate folder in the respective section. For e.g. if you are solving a problem on LeetCode related to Dynamic Programming, then create a folder in the problem under the Dynamic Programming folder.
 
     ```
     mkdir Dynamic-Programming/<Problem Name>
@@ -30,18 +58,19 @@ The aim of CoderChef Kitchen is to be a one-stop shop for programmers, both expe
       2. Algorithm.
       3. Implementation Details. (Optional)
       4. Complexity Analysis.
-6. Once all your changes are done, create a local commit.
+6. Once you are done writing the article and the solutions, remember to add the problem to the table on the main README page. (Look at the table of contents below).  
+7. Once all your changes are done, create a local commit.
 
     ```
     git add .
     git commit -am "Added article and solution for <Problem-Name>"
     ```
-7. Push your changes to a separate branch for the problem. This new branch should be deleted once the PR is merged.
+8. Push your changes to a separate branch for the problem. This new branch should be deleted once the PR is merged.
 
     ```
     git push origin master:<branch_name>
     ```
-8. Raise a Pull Request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
+9. Raise a Pull Request. This step is very important. For any changes you want to make to the repository, you have to raise a pull request. For further reading on how to raise a PR, read [this.](https://help.github.com/articles/creating-a-pull-request/)    
 
 <table>
   <tr>
