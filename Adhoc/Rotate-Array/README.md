@@ -1,7 +1,7 @@
 <!-- Screenshot -->
 
 <p align="center">
-<img src="../Images/Rotate-Array/screenshot.png" width="400" height="400">
+<img src="CoderChef-Kitchen/Images/Rotate-Array/screenshot.png" width="400" height="400">
 </p>
 
 <!-- Introduction -->
