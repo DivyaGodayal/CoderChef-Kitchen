@@ -1,5 +1,9 @@
 <!-- Screenshot -->
 
+<p align="center">
+<img src="../Images/Template/template_image_1.jpg" width="400" height="400">
+</p>
+
 <!-- Introduction -->
 
 The problem has a difficulty level of 'Easy' on Leetcode, for which many straightforward solutions are available. Since our aim is to elucidate hard concepts and breathe creativity into boring implementations, let's try to solve it using O(1) extra space witha bit of imagination.
@@ -20,7 +24,7 @@ The problem has a difficulty level of 'Easy' on Leetcode, for which many straigh
 
 #### Complexity Analysis
 
-* Time Complexity:
+* Time Complexity: 
 * Space Complexity:
 
 #### Link to OJ
