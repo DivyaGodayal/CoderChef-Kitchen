@@ -8,7 +8,7 @@
 ### Introduction
 
 ---
-### Solution 1: < Reverse of reverse is original! >
+### Solution 1: Reverse of reverse is original! 
 The problem has a difficulty level of 'Easy' on Leetcode, for which many straightforward solutions are available. Since our aim is to elucidate hard concepts and breathe creativity into boring implementations, let's try to solve it using O(1) extra space witha bit of imagination.
 
 #### Motivation
@@ -30,7 +30,8 @@ The problem has a difficulty level of 'Easy' on Leetcode, for which many straigh
 
 #### Link to OJ
 
-<!-- Add link here if available -->
 https://leetcode.com/problems/rotate-array/
+<!-- Add link here if available -->
+
 ---
-Article contributed by [samhitharamaprasad](Github Profile)
+Article contributed by [samhitharamaprasad](https://github.com/samhitharamaprasad)
