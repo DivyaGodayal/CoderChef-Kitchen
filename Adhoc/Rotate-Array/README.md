@@ -1,7 +1,7 @@
 <!-- Screenshot -->
 
 <p align="center">
-<img src="../Images/Template/template_image_1.jpg" width="400" height="400">
+<img src="../Images/Rotate-Array/screenshot.png" width="400" height="400">
 </p>
 
 <!-- Introduction -->
