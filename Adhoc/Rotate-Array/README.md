@@ -1,7 +1,7 @@
 <!-- Screenshot -->
 
 <p align="center">
-<img src="CoderChef-Kitchen/Images/Rotate-Array/screenshot.png" width="800" height="300">
+<img src="../../Images/Rotate-Array/screenshot.png" width="600" height="300">
 </p>
 
 <!-- Introduction -->
@@ -9,7 +9,7 @@
 
 ---
 ### Solution 1: Reverse of reverse is original! 
-The problem has a difficulty level of 'Easy' on Leetcode, for which many straightforward solutions are available. Since our aim is to elucidate hard concepts and breathe creativity into boring implementations, let's try to solve it using O(1) extra space witha bit of imagination.
+The problem has a difficulty level of 'Easy' on Leetcode, for which many straightforward solutions are available. Since our aim is to elucidate hard concepts and breathe creativity into boring implementations, let's try to solve it using O(1) extra space with a bit of imagination.
 
 #### Motivation
 
