@@ -19,22 +19,16 @@ We need to rotate the array to the right by `k` steps, which is the same as rota
 <p align="center">
 <img src="../../Images/Rotate-Array/pic1.png" width="900" height="500">
 </p>
-
 First letter that is rotated should be at index `k-1`. Similarly, the second letter to be rotated should be at index `k-2`, third at index `k-3` and so on.
 This can be done in two steps:
 1. Shift the letter to the head of the array. Reversing the entire array achieves this.
-
 <p align="center">
 <img src="../../Images/Rotate-Array/pic2.png" width="900" height="500">
 </p>
-
 2. Move it from head of the array to its respective place. From here, we can see that the 'e' at index `0` needs to be at index `3` and 'H' at index `0`. We are only one reversal away from the result!
-
 <p align="center">
 <img src="../../Images/Rotate-Array/pic3.png" width="900" height="500">
 </p>
-
-
 #### Algorithm
 
 <!-- stepwise algorithm details. May or may not include pseudo-code -->
