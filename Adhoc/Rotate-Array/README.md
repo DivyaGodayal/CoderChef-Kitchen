@@ -40,12 +40,12 @@ k=number of rotations to the right
 2. Reverse the subarray from index `0` to `k-1`.
 3. Reverse the remaining subarray from index `k` to `n-1`.
 
-Reversal of an array/subarray can be done by initializing a pointer to start index, another pointer end index and swapping them both. Increment start, decrement end. Continue the process as long as `start<end`
+Reversal of an array/subarray can be done by initializing a pointer to start index, another pointer to end index and swapping them both. Increment start, decrement end. Continue the process as long as `start<end`.
 
 #### Implementation Notes
 
 <!-- optional section -->
-Note that when array is rotated by number of steps equal to the length of array, it is the original array itself. Based on the same logic, `length+k` rotations is equal to `k` rotations.
+Note that when array is rotated by number of steps equal to the length of array, it becomes the original array itself. Based on the same logic, `length+k` rotations is equal to `k` rotations.
 Hence, k = k % length.
 
 #### Complexity Analysis
