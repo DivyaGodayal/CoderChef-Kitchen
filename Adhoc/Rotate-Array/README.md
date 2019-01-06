@@ -49,8 +49,8 @@ Hence, k = k % length.
 
 #### Complexity Analysis
 
-* Time Complexity: 
-* Space Complexity:
+* Time Complexity: Each reversal takes linear time as it only implements a single while loop. So, time complexity is O(n).
+* Space Complexity: Since array is modified in-place, space complexity is O(1).
 
 #### Link to OJ
 
