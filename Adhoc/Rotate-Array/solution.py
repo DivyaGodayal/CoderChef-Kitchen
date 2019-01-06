@@ -7,7 +7,9 @@ class Solution:
         """
         length=len(nums)
         k=k%length
+        #reverse entire array
         self.reverse(nums, 0, length-1)
+        #reverse subarrays
         self.reverse(nums, 0, k-1)
         self.reverse(nums, k, length-1)
            
