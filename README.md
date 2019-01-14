@@ -214,13 +214,13 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Next-Greater-Element-II">Link</a></td>
   </tr>
     <tr>
-    <td>21</td>
+    <td>22</td>
     <td>Rotate-Array</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Rotate-Array">Link</a></td>
   </tr>
   <tr>
-    <td>22</td>
+    <td>23</td>
     <td>Maximum Product of Word Lengths</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Maximum-Product-of-Word-Lengths">Link</a></td>
