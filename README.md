@@ -226,6 +226,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Maximum-Product-of-Word-Lengths">Link</a></td>
   </tr>
   <tr>
+    <td>24</td>
+    <td>Asteroid Collision</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Asteroid-Collision">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Dynamic Programming</h3></th>
   </tr>
   <tr>
