@@ -227,6 +227,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
   </tr>
   <tr>
     <td>24</td>
+    <td>Asteroid Collision</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Asteroid-Collision">Link</a></td>
+  </tr>
+  <tr>
+    <td>25</td>
     <td>Generate Parantheses</td>
     <td>LeetCode</td>
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Adhoc/Generate-Parentheses">Link</a></td>
