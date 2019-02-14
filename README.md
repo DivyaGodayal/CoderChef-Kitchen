@@ -289,6 +289,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Largest-Sum-of-Averages">Link</a></td>
   </tr>
   <tr>
+    <td>8</td>
+    <td>Climbing Stairs</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Climbing-Stairs">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Graphs and Trees</h3></th>
   </tr>
   <tr>
