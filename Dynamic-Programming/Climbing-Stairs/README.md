@@ -121,3 +121,6 @@ Read [this](https://kukuruku.co/post/the-nth-fibonacci-number-in-olog-n/) articl
 
 * Time Complexity: `O(logN)`
 * Space Complexity: `O(logN)` occupied by the recursion stack. The matrix used in the approach is of a fixed size `2*2` and doesn't vary with `N` and hence it's not counted in the space complexity.
+
+---
+Article contributed by [Sachin](https://github.com/edorado93)
