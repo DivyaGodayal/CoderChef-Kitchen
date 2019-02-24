@@ -45,8 +45,5 @@ Postorder  = [29,24,41,38,51,55,77,63,49]
 #### Link to OJ
 https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 
-#### Link to Solution
-https://github.com/Arihant1467/CompetitiveProgramming/tree/master/Tree-Construction/solution.py
-
 ---
 Article contributed by [Arihant Sai](https://github.com/Arihant1467)
