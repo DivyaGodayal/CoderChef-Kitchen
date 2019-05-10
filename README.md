@@ -370,6 +370,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Number-of-Islands">Link</a></td>
   </tr>
   <tr>
+    <td>13</td>
+    <td>Construct a Binary Tree from in-order and Postorder Traversal</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Graphs-And-Trees/Binary-Tree-from-Inorder-and-Postorder-Traversal">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Linked-List</h3></th>
   </tr>
   <tr>
