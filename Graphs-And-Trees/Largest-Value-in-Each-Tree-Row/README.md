@@ -16,9 +16,9 @@ The problem statement gives a huge hint towards performing a `level order traver
 3. We iterate until the queue becomes empty. In each iteration, we note the size of the queue. Let's call the size, `L`. This size would represent the number of nodes in the current level. We don't need to keep track of the level number here. We just need to find the maximum valued node in each level and add it to an answer array. 
 4. For each of the `L` elements in the `Q`, we push their left and right children into the queue and also update a local maximum. Note that we use an additional internal loop for iterating over the `L` elements of the queue. This is in addition to the outermost `while` loop. This is done so that we can easily iterate level-by-level *without using any additional information for keeping track of the level*.
 
-<video width="100%" poster="../../Images/Largest-Value-in-Each-Tree-Row/anim-1.png" controls>
-<source src="../../Images/Largest-Value-in-Each-Tree-Row/dry_run.mp4" type="video/mp4">
-</video>
+<a href="../../Images/Largest-Value-in-Each-Tree-Row/dry_run.mp4" target="\_blank"><img src="../../Images/Largest-Value-in-Each-Tree-Row/anim-1.png" 
+alt="IMAGE ALT TEXT HERE" border="10" />
+</a>
 
 #### Complexity Analysis
 
