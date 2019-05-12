@@ -17,7 +17,7 @@ The problem statement gives a huge hint towards performing a `level order traver
 4. For each of the `L` elements in the `Q`, we push their left and right children into the queue and also update a local maximum. Note that we use an additional internal loop for iterating over the `L` elements of the queue. This is in addition to the outermost `while` loop. This is done so that we can easily iterate level-by-level *without using any additional information for keeping track of the level*.
 
 <p align="center">
-<img src="../../Images/Largest-Value-in-Each-Tree-Row/dry_run.gif" width="600">
+<img src="../../Images/Largest-Value-in-Each-Tree-Row/dry_run.gif" width="700">
 </p>
 
 #### Complexity Analysis
