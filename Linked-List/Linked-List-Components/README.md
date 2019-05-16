@@ -44,10 +44,6 @@ Let's look at a series of diagrams that show a dry run of the algorithm on a sam
 <img src="../../Images/Linked-List-Components/pic4.png" width="600" >
 </p>
 
-<p align="center">
-<img src="../../Images/Linked-List-Components/pic2.png" width="600" >
-</p>
-
 #### Complexity Analysis
 
 * Time Complexity: `O(N)` which essentially consists of two basic operations. Firstly, we convert the given list `G` to a set. Since `G` consists of a a subset of values of the main linked list, this is an `O(N)` operation. Next, we iterate over the list one element at a time to find the number of components. This again is a `O(N)` operation.
