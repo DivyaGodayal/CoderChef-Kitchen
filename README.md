@@ -295,6 +295,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Climbing-Stairs">Link</a></td>
   </tr>
   <tr>
+    <td>9</td>
+    <td>Video Stitching</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Dynamic-Programming/Video-Stitching">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Graphs and Trees</h3></th>
   </tr>
   <tr>
