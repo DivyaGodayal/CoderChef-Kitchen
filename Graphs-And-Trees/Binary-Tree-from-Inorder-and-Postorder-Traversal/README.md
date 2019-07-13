@@ -1,7 +1,7 @@
 ## Construct a Binary Tree from in-order and Postorder Traversal
 
 <p>
-<img align="center" alt="Question Screenshot" src="../../Images/Binary-Tree-from-in-order-and-Postorder-Traversal/question.png">
+<img align="center" alt="Question Screenshot" src="../../Images/Binary-Tree-from-Inorder-and-Postorder-Traversal/question.png">
 </p>
 
 ---
@@ -16,7 +16,7 @@ We are given in-order and postorder traversal of a Binary Tree and we have to re
 Let us understand how are we going to approach the problem by taking an example.
 
 <p>
-<img align="center" alt="Question Screenshot" src="./../../Images/Binary-Tree-from-in-order-and-Postorder-Traversal/example-tree.png"  width="600">
+<img align="center" alt="Question Screenshot" src="./../../Images/Binary-Tree-from-Inorder-and-Postorder-Traversal/example-tree.png"  width="600">
 </p>
 
 Let us write the `in-order` and `Postorder` traversal of the above tree.
