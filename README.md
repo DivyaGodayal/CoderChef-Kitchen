@@ -427,6 +427,12 @@ There are multiple ways in which you can contribute. There are no "prerequisites
     <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Swap-Nodes-in-Pairs">Link</a></td>
   </tr>
   <tr>
+    <td>7</td>
+    <td>Linked List Components</td>
+    <td>LeetCode</td>
+    <td><a href="https://github.com/DivyaGodayal/CoderChef-Kitchen/tree/master/Linked-List/Linked-List-Components">Link</a></td>
+  </tr>
+  <tr>
     <th colspan="4"><h3>Strings</h3></th>
   </tr>
   <tr>
